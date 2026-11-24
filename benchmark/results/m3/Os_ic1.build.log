@@ -1,0 +1,16 @@
+mkdir -p build_Os_ic1
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c startup.c -o build_Os_ic1/startup.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c core_portme.c -o build_Os_ic1/core_portme.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ee_printf.c -o build_Os_ic1/ee_printf.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_main.c -o build_Os_ic1/core_main.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_list_join.c -o build_Os_ic1/core_list_join.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_matrix.c -o build_Os_ic1/core_matrix.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_state.c -o build_Os_ic1/core_state.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_util.c -o build_Os_ic1/core_util.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=1 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/cvt.c -o build_Os_ic1/cvt.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -T mps2_an385.ld -nostartfiles -Wl,--gc-sections -Wl,-Map=build_Os_ic1/coremark_m3.map build_Os_ic1/startup.o build_Os_ic1/core_portme.o build_Os_ic1/ee_printf.o build_Os_ic1/core_main.o build_Os_ic1/core_list_join.o build_Os_ic1/core_matrix.o build_Os_ic1/core_state.o build_Os_ic1/core_util.o build_Os_ic1/cvt.o -lc -lgcc -o build_Os_ic1/coremark_m3.elf
+arm-none-eabi-objcopy -O binary build_Os_ic1/coremark_m3.elf build_Os_ic1/coremark_m3.bin
+arm-none-eabi-objdump -d -S build_Os_ic1/coremark_m3.elf > build_Os_ic1/coremark_m3.obj
+arm-none-eabi-size build_Os_ic1/coremark_m3.elf
+   text	   data	    bss	    dec	    hex	filename
+   8404	     12	     40	   8456	   2108	build_Os_ic1/coremark_m3.elf

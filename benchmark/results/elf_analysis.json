@@ -1,0 +1,3770 @@
+[
+  {
+    "name": "m3_O2",
+    "arch": "m3",
+    "elf": "/work/benchmark/m3/build_O2_ic1/coremark_m3.elf",
+    "size": {
+      "text": 10112,
+      "data": 12,
+      "bss": 40,
+      "dec": 10164
+    },
+    "core_objects_sum": {
+      "text": 5348,
+      "rodata": 1322,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 1288,
+        "rodata": 1085,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 1300,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 1452,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 848,
+        "rodata": 237,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 460,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 444,
+        "rodata": 66,
+        "data": 12,
+        "bss": 36
+      },
+      "ee_printf.o": {
+        "text": 1992,
+        "rodata": 84,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 632,
+        "rodata": 0,
+        "data": 0,
+        "bss": 80
+      },
+      "startup.o": {
+        "text": 136,
+        "rodata": 93,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".isr_vector": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 64,
+        "flags": "A"
+      },
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 64,
+        "size": 10040,
+        "flags": "AX"
+      },
+      ".ARM.exidx": {
+        "type": "ARM_EXIDX",
+        "addr": 10104,
+        "size": 8,
+        "flags": "AL"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 36,
+        "flags": "WA"
+      },
+      ".heap": {
+        "type": "NOBITS",
+        "addr": 536870964,
+        "size": 4,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 2094,
+        "32b": 942,
+        "bytes": 7956,
+        "literal_items": 503,
+        "literal_bytes": 1984,
+        "total_insns": 3036,
+        "pct_16b": 68.97,
+        "avg_insn_bytes": 2.621
+      },
+      "coremark_funcs": {
+        "16b": 1256,
+        "32b": 529,
+        "bytes": 4628,
+        "total_insns": 1785,
+        "pct_16b": 70.36,
+        "avg_insn_bytes": 2.593
+      },
+      "functions": {
+        "Default_Handler": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "HardFault_Handler": {
+          "16b": 8,
+          "32b": 1,
+          "bytes": 20,
+          "total_insns": 9,
+          "pct_16b": 88.89,
+          "avg_insn_bytes": 2.222
+        },
+        "Reset_Handler": {
+          "16b": 28,
+          "32b": 5,
+          "bytes": 76,
+          "total_insns": 33,
+          "pct_16b": 84.85,
+          "avg_insn_bytes": 2.303
+        },
+        "SysTick_Handler": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "__aeabi_idiv0": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__aeabi_uldivmod": {
+          "16b": 8,
+          "32b": 8,
+          "bytes": 48,
+          "total_insns": 16,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "__udivmoddi4": {
+          "16b": 138,
+          "32b": 104,
+          "bytes": 692,
+          "total_insns": 242,
+          "pct_16b": 57.02,
+          "avg_insn_bytes": 2.86
+        },
+        "calc_func": {
+          "16b": 42,
+          "32b": 15,
+          "bytes": 144,
+          "total_insns": 57,
+          "pct_16b": 73.68,
+          "avg_insn_bytes": 2.526
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 10,
+          "32b": 2,
+          "bytes": 28,
+          "total_insns": 12,
+          "pct_16b": 83.33,
+          "avg_insn_bytes": 2.333
+        },
+        "cmp_idx": {
+          "16b": 10,
+          "32b": 10,
+          "bytes": 60,
+          "total_insns": 20,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "core_bench_list": {
+          "16b": 108,
+          "32b": 53,
+          "bytes": 428,
+          "total_insns": 161,
+          "pct_16b": 67.08,
+          "avg_insn_bytes": 2.658
+        },
+        "core_bench_matrix": {
+          "16b": 8,
+          "32b": 4,
+          "bytes": 32,
+          "total_insns": 12,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "core_bench_state": {
+          "16b": 70,
+          "32b": 20,
+          "bytes": 220,
+          "total_insns": 90,
+          "pct_16b": 77.78,
+          "avg_insn_bytes": 2.444
+        },
+        "core_init_matrix": {
+          "16b": 50,
+          "32b": 34,
+          "bytes": 236,
+          "total_insns": 84,
+          "pct_16b": 59.52,
+          "avg_insn_bytes": 2.81
+        },
+        "core_init_state": {
+          "16b": 50,
+          "32b": 26,
+          "bytes": 204,
+          "total_insns": 76,
+          "pct_16b": 65.79,
+          "avg_insn_bytes": 2.684
+        },
+        "core_list_init": {
+          "16b": 58,
+          "32b": 36,
+          "bytes": 260,
+          "total_insns": 94,
+          "pct_16b": 61.7,
+          "avg_insn_bytes": 2.766
+        },
+        "core_list_mergesort": {
+          "16b": 70,
+          "32b": 10,
+          "bytes": 180,
+          "total_insns": 80,
+          "pct_16b": 87.5,
+          "avg_insn_bytes": 2.25
+        },
+        "core_state_transition": {
+          "16b": 162,
+          "32b": 17,
+          "bytes": 392,
+          "total_insns": 179,
+          "pct_16b": 90.5,
+          "avg_insn_bytes": 2.19
+        },
+        "crc16": {
+          "16b": 18,
+          "32b": 12,
+          "bytes": 84,
+          "total_insns": 30,
+          "pct_16b": 60.0,
+          "avg_insn_bytes": 2.8
+        },
+        "crcu16": {
+          "16b": 18,
+          "32b": 12,
+          "bytes": 84,
+          "total_insns": 30,
+          "pct_16b": 60.0,
+          "avg_insn_bytes": 2.8
+        },
+        "crcu32": {
+          "16b": 30,
+          "32b": 24,
+          "bytes": 156,
+          "total_insns": 54,
+          "pct_16b": 55.56,
+          "avg_insn_bytes": 2.889
+        },
+        "ee_printf": {
+          "16b": 303,
+          "32b": 171,
+          "bytes": 1290,
+          "total_insns": 474,
+          "pct_16b": 63.92,
+          "avg_insn_bytes": 2.722
+        },
+        "get_seed_32": {
+          "16b": 21,
+          "32b": 1,
+          "bytes": 46,
+          "total_insns": 22,
+          "pct_16b": 95.45,
+          "avg_insn_bytes": 2.091
+        },
+        "get_time": {
+          "16b": 8,
+          "32b": 1,
+          "bytes": 20,
+          "total_insns": 9,
+          "pct_16b": 88.89,
+          "avg_insn_bytes": 2.222
+        },
+        "iterate": {
+          "16b": 20,
+          "32b": 6,
+          "bytes": 64,
+          "total_insns": 26,
+          "pct_16b": 76.92,
+          "avg_insn_bytes": 2.462
+        },
+        "main": {
+          "16b": 274,
+          "32b": 136,
+          "bytes": 1092,
+          "total_insns": 410,
+          "pct_16b": 66.83,
+          "avg_insn_bytes": 2.663
+        },
+        "matrix_mul_matrix": {
+          "16b": 28,
+          "32b": 13,
+          "bytes": 108,
+          "total_insns": 41,
+          "pct_16b": 68.29,
+          "avg_insn_bytes": 2.634
+        },
+        "matrix_mul_matrix_bitextract": {
+          "16b": 26,
+          "32b": 16,
+          "bytes": 116,
+          "total_insns": 42,
+          "pct_16b": 61.9,
+          "avg_insn_bytes": 2.762
+        },
+        "matrix_mul_vect": {
+          "16b": 14,
+          "32b": 9,
+          "bytes": 64,
+          "total_insns": 23,
+          "pct_16b": 60.87,
+          "avg_insn_bytes": 2.783
+        },
+        "matrix_test": {
+          "16b": 188,
+          "32b": 74,
+          "bytes": 672,
+          "total_insns": 262,
+          "pct_16b": 71.76,
+          "avg_insn_bytes": 2.565
+        },
+        "memcpy": {
+          "16b": 90,
+          "32b": 14,
+          "bytes": 236,
+          "total_insns": 104,
+          "pct_16b": 86.54,
+          "avg_insn_bytes": 2.269
+        },
+        "memset": {
+          "16b": 44,
+          "32b": 18,
+          "bytes": 160,
+          "total_insns": 62,
+          "pct_16b": 70.97,
+          "avg_insn_bytes": 2.581
+        },
+        "number": {
+          "16b": 102,
+          "32b": 56,
+          "bytes": 428,
+          "total_insns": 158,
+          "pct_16b": 64.56,
+          "avg_insn_bytes": 2.709
+        },
+        "portable_fini": {
+          "16b": 16,
+          "32b": 3,
+          "bytes": 44,
+          "total_insns": 19,
+          "pct_16b": 84.21,
+          "avg_insn_bytes": 2.316
+        },
+        "portable_init": {
+          "16b": 16,
+          "32b": 6,
+          "bytes": 56,
+          "total_insns": 22,
+          "pct_16b": 72.73,
+          "avg_insn_bytes": 2.545
+        },
+        "start_time": {
+          "16b": 14,
+          "32b": 9,
+          "bytes": 64,
+          "total_insns": 23,
+          "pct_16b": 60.87,
+          "avg_insn_bytes": 2.783
+        },
+        "stop_time": {
+          "16b": 14,
+          "32b": 9,
+          "bytes": 64,
+          "total_insns": 23,
+          "pct_16b": 60.87,
+          "avg_insn_bytes": 2.783
+        },
+        "time_in_secs": {
+          "16b": 4,
+          "32b": 2,
+          "bytes": 16,
+          "total_insns": 6,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "uart_putc": {
+          "16b": 14,
+          "32b": 2,
+          "bytes": 36,
+          "total_insns": 16,
+          "pct_16b": 87.5,
+          "avg_insn_bytes": 2.25
+        }
+      }
+    }
+  },
+  {
+    "name": "m3_O3",
+    "arch": "m3",
+    "elf": "/work/benchmark/m3/build_O3_ic1/coremark_m3.elf",
+    "size": {
+      "text": 12304,
+      "data": 12,
+      "bss": 40,
+      "dec": 12356
+    },
+    "core_objects_sum": {
+      "text": 7648,
+      "rodata": 1292,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 1504,
+        "rodata": 1055,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 2096,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 1672,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 1020,
+        "rodata": 237,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 1356,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 444,
+        "rodata": 66,
+        "data": 12,
+        "bss": 36
+      },
+      "ee_printf.o": {
+        "text": 2684,
+        "rodata": 84,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 856,
+        "rodata": 0,
+        "data": 0,
+        "bss": 80
+      },
+      "startup.o": {
+        "text": 136,
+        "rodata": 93,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".isr_vector": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 64,
+        "flags": "A"
+      },
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 64,
+        "size": 12232,
+        "flags": "AX"
+      },
+      ".ARM.exidx": {
+        "type": "ARM_EXIDX",
+        "addr": 12296,
+        "size": 8,
+        "flags": "AL"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 36,
+        "flags": "WA"
+      },
+      ".heap": {
+        "type": "NOBITS",
+        "addr": 536870964,
+        "size": 4,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 2378,
+        "32b": 1360,
+        "bytes": 10196,
+        "literal_items": 502,
+        "literal_bytes": 1972,
+        "total_insns": 3738,
+        "pct_16b": 63.62,
+        "avg_insn_bytes": 2.728
+      },
+      "coremark_funcs": {
+        "16b": 1488,
+        "32b": 802,
+        "bytes": 6184,
+        "total_insns": 2290,
+        "pct_16b": 64.98,
+        "avg_insn_bytes": 2.7
+      },
+      "functions": {
+        "Default_Handler": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "HardFault_Handler": {
+          "16b": 8,
+          "32b": 1,
+          "bytes": 20,
+          "total_insns": 9,
+          "pct_16b": 88.89,
+          "avg_insn_bytes": 2.222
+        },
+        "Reset_Handler": {
+          "16b": 28,
+          "32b": 5,
+          "bytes": 76,
+          "total_insns": 33,
+          "pct_16b": 84.85,
+          "avg_insn_bytes": 2.303
+        },
+        "SysTick_Handler": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "__aeabi_idiv0": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__aeabi_uldivmod": {
+          "16b": 8,
+          "32b": 8,
+          "bytes": 48,
+          "total_insns": 16,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "__udivmoddi4": {
+          "16b": 138,
+          "32b": 104,
+          "bytes": 692,
+          "total_insns": 242,
+          "pct_16b": 57.02,
+          "avg_insn_bytes": 2.86
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 68,
+          "32b": 38,
+          "bytes": 288,
+          "total_insns": 106,
+          "pct_16b": 64.15,
+          "avg_insn_bytes": 2.717
+        },
+        "core_bench_list": {
+          "16b": 246,
+          "32b": 71,
+          "bytes": 776,
+          "total_insns": 317,
+          "pct_16b": 77.6,
+          "avg_insn_bytes": 2.448
+        },
+        "core_bench_matrix": {
+          "16b": 8,
+          "32b": 4,
+          "bytes": 32,
+          "total_insns": 12,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "core_bench_state": {
+          "16b": 98,
+          "32b": 24,
+          "bytes": 292,
+          "total_insns": 122,
+          "pct_16b": 80.33,
+          "avg_insn_bytes": 2.393
+        },
+        "core_init_matrix": {
+          "16b": 50,
+          "32b": 34,
+          "bytes": 236,
+          "total_insns": 84,
+          "pct_16b": 59.52,
+          "avg_insn_bytes": 2.81
+        },
+        "core_init_state": {
+          "16b": 62,
+          "32b": 45,
+          "bytes": 304,
+          "total_insns": 107,
+          "pct_16b": 57.94,
+          "avg_insn_bytes": 2.841
+        },
+        "core_list_init": {
+          "16b": 126,
+          "32b": 52,
+          "bytes": 460,
+          "total_insns": 178,
+          "pct_16b": 70.79,
+          "avg_insn_bytes": 2.584
+        },
+        "core_state_transition": {
+          "16b": 162,
+          "32b": 17,
+          "bytes": 392,
+          "total_insns": 179,
+          "pct_16b": 90.5,
+          "avg_insn_bytes": 2.19
+        },
+        "crc16": {
+          "16b": 28,
+          "32b": 56,
+          "bytes": 280,
+          "total_insns": 84,
+          "pct_16b": 33.33,
+          "avg_insn_bytes": 3.333
+        },
+        "crcu16": {
+          "16b": 28,
+          "32b": 55,
+          "bytes": 276,
+          "total_insns": 83,
+          "pct_16b": 33.73,
+          "avg_insn_bytes": 3.325
+        },
+        "crcu32": {
+          "16b": 44,
+          "32b": 121,
+          "bytes": 572,
+          "total_insns": 165,
+          "pct_16b": 26.67,
+          "avg_insn_bytes": 3.467
+        },
+        "ee_printf": {
+          "16b": 355,
+          "32b": 316,
+          "bytes": 1974,
+          "total_insns": 671,
+          "pct_16b": 52.91,
+          "avg_insn_bytes": 2.942
+        },
+        "get_seed_32": {
+          "16b": 21,
+          "32b": 1,
+          "bytes": 46,
+          "total_insns": 22,
+          "pct_16b": 95.45,
+          "avg_insn_bytes": 2.091
+        },
+        "get_time": {
+          "16b": 8,
+          "32b": 1,
+          "bytes": 20,
+          "total_insns": 9,
+          "pct_16b": 88.89,
+          "avg_insn_bytes": 2.222
+        },
+        "iterate": {
+          "16b": 24,
+          "32b": 6,
+          "bytes": 72,
+          "total_insns": 30,
+          "pct_16b": 80.0,
+          "avg_insn_bytes": 2.4
+        },
+        "main": {
+          "16b": 306,
+          "32b": 174,
+          "bytes": 1308,
+          "total_insns": 480,
+          "pct_16b": 63.75,
+          "avg_insn_bytes": 2.725
+        },
+        "matrix_test": {
+          "16b": 236,
+          "32b": 105,
+          "bytes": 892,
+          "total_insns": 341,
+          "pct_16b": 69.21,
+          "avg_insn_bytes": 2.616
+        },
+        "memcpy": {
+          "16b": 90,
+          "32b": 14,
+          "bytes": 236,
+          "total_insns": 104,
+          "pct_16b": 86.54,
+          "avg_insn_bytes": 2.269
+        },
+        "memset": {
+          "16b": 44,
+          "32b": 18,
+          "bytes": 160,
+          "total_insns": 62,
+          "pct_16b": 70.97,
+          "avg_insn_bytes": 2.581
+        },
+        "number": {
+          "16b": 102,
+          "32b": 56,
+          "bytes": 428,
+          "total_insns": 158,
+          "pct_16b": 64.56,
+          "avg_insn_bytes": 2.709
+        },
+        "portable_fini": {
+          "16b": 16,
+          "32b": 3,
+          "bytes": 44,
+          "total_insns": 19,
+          "pct_16b": 84.21,
+          "avg_insn_bytes": 2.316
+        },
+        "portable_init": {
+          "16b": 16,
+          "32b": 6,
+          "bytes": 56,
+          "total_insns": 22,
+          "pct_16b": 72.73,
+          "avg_insn_bytes": 2.545
+        },
+        "start_time": {
+          "16b": 14,
+          "32b": 9,
+          "bytes": 64,
+          "total_insns": 23,
+          "pct_16b": 60.87,
+          "avg_insn_bytes": 2.783
+        },
+        "stop_time": {
+          "16b": 14,
+          "32b": 9,
+          "bytes": 64,
+          "total_insns": 23,
+          "pct_16b": 60.87,
+          "avg_insn_bytes": 2.783
+        },
+        "time_in_secs": {
+          "16b": 4,
+          "32b": 2,
+          "bytes": 16,
+          "total_insns": 6,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "uart_putc": {
+          "16b": 14,
+          "32b": 2,
+          "bytes": 36,
+          "total_insns": 16,
+          "pct_16b": 87.5,
+          "avg_insn_bytes": 2.25
+        }
+      }
+    }
+  },
+  {
+    "name": "m3_O3_unroll",
+    "arch": "m3",
+    "elf": "/work/benchmark/m3/build_O3_unroll_ic1/coremark_m3.elf",
+    "size": {
+      "text": 16928,
+      "data": 12,
+      "bss": 40,
+      "dec": 16980
+    },
+    "core_objects_sum": {
+      "text": 13108,
+      "rodata": 1304,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 1588,
+        "rodata": 1067,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 2704,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 5788,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 1564,
+        "rodata": 237,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 1464,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 468,
+        "rodata": 66,
+        "data": 12,
+        "bss": 36
+      },
+      "ee_printf.o": {
+        "text": 3388,
+        "rodata": 84,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 2264,
+        "rodata": 0,
+        "data": 0,
+        "bss": 80
+      },
+      "startup.o": {
+        "text": 140,
+        "rodata": 93,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".isr_vector": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 64,
+        "flags": "A"
+      },
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 64,
+        "size": 16856,
+        "flags": "AX"
+      },
+      ".ARM.exidx": {
+        "type": "ARM_EXIDX",
+        "addr": 16920,
+        "size": 8,
+        "flags": "AL"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 36,
+        "flags": "WA"
+      },
+      ".heap": {
+        "type": "NOBITS",
+        "addr": 536870964,
+        "size": 4,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 3182,
+        "32b": 2112,
+        "bytes": 14812,
+        "literal_items": 503,
+        "literal_bytes": 1980,
+        "total_insns": 5294,
+        "pct_16b": 60.11,
+        "avg_insn_bytes": 2.798
+      },
+      "coremark_funcs": {
+        "16b": 2230,
+        "32b": 1401,
+        "bytes": 10064,
+        "total_insns": 3631,
+        "pct_16b": 61.42,
+        "avg_insn_bytes": 2.772
+      },
+      "functions": {
+        "Default_Handler": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "HardFault_Handler": {
+          "16b": 8,
+          "32b": 1,
+          "bytes": 20,
+          "total_insns": 9,
+          "pct_16b": 88.89,
+          "avg_insn_bytes": 2.222
+        },
+        "Reset_Handler": {
+          "16b": 26,
+          "32b": 7,
+          "bytes": 80,
+          "total_insns": 33,
+          "pct_16b": 78.79,
+          "avg_insn_bytes": 2.424
+        },
+        "SysTick_Handler": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "__aeabi_idiv0": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__aeabi_uldivmod": {
+          "16b": 8,
+          "32b": 8,
+          "bytes": 48,
+          "total_insns": 16,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "__udivmoddi4": {
+          "16b": 138,
+          "32b": 104,
+          "bytes": 692,
+          "total_insns": 242,
+          "pct_16b": 57.02,
+          "avg_insn_bytes": 2.86
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 68,
+          "32b": 38,
+          "bytes": 288,
+          "total_insns": 106,
+          "pct_16b": 64.15,
+          "avg_insn_bytes": 2.717
+        },
+        "core_bench_list": {
+          "16b": 330,
+          "32b": 108,
+          "bytes": 1092,
+          "total_insns": 438,
+          "pct_16b": 75.34,
+          "avg_insn_bytes": 2.493
+        },
+        "core_bench_matrix": {
+          "16b": 8,
+          "32b": 4,
+          "bytes": 32,
+          "total_insns": 12,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "core_bench_state": {
+          "16b": 270,
+          "32b": 72,
+          "bytes": 828,
+          "total_insns": 342,
+          "pct_16b": 78.95,
+          "avg_insn_bytes": 2.421
+        },
+        "core_init_matrix": {
+          "16b": 110,
+          "32b": 98,
+          "bytes": 612,
+          "total_insns": 208,
+          "pct_16b": 52.88,
+          "avg_insn_bytes": 2.942
+        },
+        "core_init_state": {
+          "16b": 62,
+          "32b": 45,
+          "bytes": 304,
+          "total_insns": 107,
+          "pct_16b": 57.94,
+          "avg_insn_bytes": 2.841
+        },
+        "core_list_init": {
+          "16b": 176,
+          "32b": 64,
+          "bytes": 608,
+          "total_insns": 240,
+          "pct_16b": 73.33,
+          "avg_insn_bytes": 2.533
+        },
+        "core_state_transition": {
+          "16b": 160,
+          "32b": 20,
+          "bytes": 400,
+          "total_insns": 180,
+          "pct_16b": 88.89,
+          "avg_insn_bytes": 2.222
+        },
+        "crc16": {
+          "16b": 18,
+          "32b": 67,
+          "bytes": 304,
+          "total_insns": 85,
+          "pct_16b": 21.18,
+          "avg_insn_bytes": 3.576
+        },
+        "crcu16": {
+          "16b": 18,
+          "32b": 66,
+          "bytes": 300,
+          "total_insns": 84,
+          "pct_16b": 21.43,
+          "avg_insn_bytes": 3.571
+        },
+        "crcu32": {
+          "16b": 26,
+          "32b": 140,
+          "bytes": 612,
+          "total_insns": 166,
+          "pct_16b": 15.66,
+          "avg_insn_bytes": 3.687
+        },
+        "ee_printf": {
+          "16b": 421,
+          "32b": 410,
+          "bytes": 2482,
+          "total_insns": 831,
+          "pct_16b": 50.66,
+          "avg_insn_bytes": 2.987
+        },
+        "get_seed_32": {
+          "16b": 19,
+          "32b": 3,
+          "bytes": 50,
+          "total_insns": 22,
+          "pct_16b": 86.36,
+          "avg_insn_bytes": 2.273
+        },
+        "get_time": {
+          "16b": 8,
+          "32b": 2,
+          "bytes": 24,
+          "total_insns": 10,
+          "pct_16b": 80.0,
+          "avg_insn_bytes": 2.4
+        },
+        "iterate": {
+          "16b": 24,
+          "32b": 6,
+          "bytes": 72,
+          "total_insns": 30,
+          "pct_16b": 80.0,
+          "avg_insn_bytes": 2.4
+        },
+        "main": {
+          "16b": 264,
+          "32b": 216,
+          "bytes": 1392,
+          "total_insns": 480,
+          "pct_16b": 55.0,
+          "avg_insn_bytes": 2.9
+        },
+        "matrix_test": {
+          "16b": 694,
+          "32b": 457,
+          "bytes": 3216,
+          "total_insns": 1151,
+          "pct_16b": 60.3,
+          "avg_insn_bytes": 2.794
+        },
+        "memcpy": {
+          "16b": 90,
+          "32b": 14,
+          "bytes": 236,
+          "total_insns": 104,
+          "pct_16b": 86.54,
+          "avg_insn_bytes": 2.269
+        },
+        "memset": {
+          "16b": 44,
+          "32b": 18,
+          "bytes": 160,
+          "total_insns": 62,
+          "pct_16b": 70.97,
+          "avg_insn_bytes": 2.581
+        },
+        "number": {
+          "16b": 106,
+          "32b": 103,
+          "bytes": 624,
+          "total_insns": 209,
+          "pct_16b": 50.72,
+          "avg_insn_bytes": 2.986
+        },
+        "portable_fini": {
+          "16b": 16,
+          "32b": 4,
+          "bytes": 48,
+          "total_insns": 20,
+          "pct_16b": 80.0,
+          "avg_insn_bytes": 2.4
+        },
+        "portable_init": {
+          "16b": 14,
+          "32b": 8,
+          "bytes": 60,
+          "total_insns": 22,
+          "pct_16b": 63.64,
+          "avg_insn_bytes": 2.727
+        },
+        "start_time": {
+          "16b": 14,
+          "32b": 10,
+          "bytes": 68,
+          "total_insns": 24,
+          "pct_16b": 58.33,
+          "avg_insn_bytes": 2.833
+        },
+        "stop_time": {
+          "16b": 14,
+          "32b": 10,
+          "bytes": 68,
+          "total_insns": 24,
+          "pct_16b": 58.33,
+          "avg_insn_bytes": 2.833
+        },
+        "time_in_secs": {
+          "16b": 4,
+          "32b": 2,
+          "bytes": 16,
+          "total_insns": 6,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "uart_putc": {
+          "16b": 12,
+          "32b": 4,
+          "bytes": 40,
+          "total_insns": 16,
+          "pct_16b": 75.0,
+          "avg_insn_bytes": 2.5
+        }
+      }
+    }
+  },
+  {
+    "name": "m3_Os",
+    "arch": "m3",
+    "elf": "/work/benchmark/m3/build_Os_ic1/coremark_m3.elf",
+    "size": {
+      "text": 8404,
+      "data": 12,
+      "bss": 40,
+      "dec": 8456
+    },
+    "core_objects_sum": {
+      "text": 3806,
+      "rodata": 1242,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 1234,
+        "rodata": 1050,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 1018,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 758,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 622,
+        "rodata": 192,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 174,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 304,
+        "rodata": 66,
+        "data": 12,
+        "bss": 36
+      },
+      "ee_printf.o": {
+        "text": 1568,
+        "rodata": 81,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 556,
+        "rodata": 0,
+        "data": 0,
+        "bss": 80
+      },
+      "startup.o": {
+        "text": 140,
+        "rodata": 93,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".isr_vector": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 64,
+        "flags": "A"
+      },
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 64,
+        "size": 8332,
+        "flags": "AX"
+      },
+      ".ARM.exidx": {
+        "type": "ARM_EXIDX",
+        "addr": 8396,
+        "size": 8,
+        "flags": "AL"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 36,
+        "flags": "WA"
+      },
+      ".heap": {
+        "type": "NOBITS",
+        "addr": 536870964,
+        "size": 4,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 1728,
+        "32b": 764,
+        "bytes": 6512,
+        "literal_items": 441,
+        "literal_bytes": 1744,
+        "total_insns": 2492,
+        "pct_16b": 69.34,
+        "avg_insn_bytes": 2.613
+      },
+      "coremark_funcs": {
+        "16b": 951,
+        "32b": 399,
+        "bytes": 3498,
+        "total_insns": 1350,
+        "pct_16b": 70.44,
+        "avg_insn_bytes": 2.591
+      },
+      "functions": {
+        "Default_Handler": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "HardFault_Handler": {
+          "16b": 8,
+          "32b": 1,
+          "bytes": 20,
+          "total_insns": 9,
+          "pct_16b": 88.89,
+          "avg_insn_bytes": 2.222
+        },
+        "Reset_Handler": {
+          "16b": 30,
+          "32b": 5,
+          "bytes": 80,
+          "total_insns": 35,
+          "pct_16b": 85.71,
+          "avg_insn_bytes": 2.286
+        },
+        "SysTick_Handler": {
+          "16b": 4,
+          "32b": 3,
+          "bytes": 20,
+          "total_insns": 7,
+          "pct_16b": 57.14,
+          "avg_insn_bytes": 2.857
+        },
+        "__aeabi_idiv0": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__aeabi_uldivmod": {
+          "16b": 8,
+          "32b": 8,
+          "bytes": 48,
+          "total_insns": 16,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "__udivmoddi4": {
+          "16b": 138,
+          "32b": 104,
+          "bytes": 692,
+          "total_insns": 242,
+          "pct_16b": 57.02,
+          "avg_insn_bytes": 2.86
+        },
+        "calc_func": {
+          "16b": 34,
+          "32b": 16,
+          "bytes": 132,
+          "total_insns": 50,
+          "pct_16b": 68.0,
+          "avg_insn_bytes": 2.64
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 9,
+          "32b": 2,
+          "bytes": 26,
+          "total_insns": 11,
+          "pct_16b": 81.82,
+          "avg_insn_bytes": 2.364
+        },
+        "cmp_idx": {
+          "16b": 7,
+          "32b": 8,
+          "bytes": 46,
+          "total_insns": 15,
+          "pct_16b": 46.67,
+          "avg_insn_bytes": 3.067
+        },
+        "core_bench_list": {
+          "16b": 86,
+          "32b": 26,
+          "bytes": 276,
+          "total_insns": 112,
+          "pct_16b": 76.79,
+          "avg_insn_bytes": 2.464
+        },
+        "core_bench_matrix": {
+          "16b": 7,
+          "32b": 4,
+          "bytes": 30,
+          "total_insns": 11,
+          "pct_16b": 63.64,
+          "avg_insn_bytes": 2.727
+        },
+        "core_bench_state": {
+          "16b": 57,
+          "32b": 19,
+          "bytes": 190,
+          "total_insns": 76,
+          "pct_16b": 75.0,
+          "avg_insn_bytes": 2.5
+        },
+        "core_init_matrix": {
+          "16b": 39,
+          "32b": 17,
+          "bytes": 146,
+          "total_insns": 56,
+          "pct_16b": 69.64,
+          "avg_insn_bytes": 2.607
+        },
+        "core_init_state": {
+          "16b": 38,
+          "32b": 17,
+          "bytes": 144,
+          "total_insns": 55,
+          "pct_16b": 69.09,
+          "avg_insn_bytes": 2.618
+        },
+        "core_list_find": {
+          "16b": 17,
+          "32b": 3,
+          "bytes": 46,
+          "total_insns": 20,
+          "pct_16b": 85.0,
+          "avg_insn_bytes": 2.3
+        },
+        "core_list_init": {
+          "16b": 48,
+          "32b": 25,
+          "bytes": 196,
+          "total_insns": 73,
+          "pct_16b": 65.75,
+          "avg_insn_bytes": 2.685
+        },
+        "core_list_insert_new": {
+          "16b": 24,
+          "32b": 4,
+          "bytes": 64,
+          "total_insns": 28,
+          "pct_16b": 85.71,
+          "avg_insn_bytes": 2.286
+        },
+        "core_list_mergesort": {
+          "16b": 47,
+          "32b": 14,
+          "bytes": 150,
+          "total_insns": 61,
+          "pct_16b": 77.05,
+          "avg_insn_bytes": 2.459
+        },
+        "core_list_remove": {
+          "16b": 10,
+          "32b": 0,
+          "bytes": 20,
+          "total_insns": 10,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "core_list_reverse": {
+          "16b": 9,
+          "32b": 0,
+          "bytes": 18,
+          "total_insns": 9,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "core_state_transition": {
+          "16b": 100,
+          "32b": 6,
+          "bytes": 224,
+          "total_insns": 106,
+          "pct_16b": 94.34,
+          "avg_insn_bytes": 2.113
+        },
+        "crc16": {
+          "16b": 1,
+          "32b": 1,
+          "bytes": 6,
+          "total_insns": 2,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "crcu16": {
+          "16b": 5,
+          "32b": 3,
+          "bytes": 22,
+          "total_insns": 8,
+          "pct_16b": 62.5,
+          "avg_insn_bytes": 2.75
+        },
+        "crcu32": {
+          "16b": 5,
+          "32b": 3,
+          "bytes": 22,
+          "total_insns": 8,
+          "pct_16b": 62.5,
+          "avg_insn_bytes": 2.75
+        },
+        "crcu8": {
+          "16b": 12,
+          "32b": 7,
+          "bytes": 52,
+          "total_insns": 19,
+          "pct_16b": 63.16,
+          "avg_insn_bytes": 2.737
+        },
+        "ee_printf": {
+          "16b": 278,
+          "32b": 139,
+          "bytes": 1112,
+          "total_insns": 417,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "errpat": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "floatpat": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "get_seed_32": {
+          "16b": 17,
+          "32b": 1,
+          "bytes": 38,
+          "total_insns": 18,
+          "pct_16b": 94.44,
+          "avg_insn_bytes": 2.111
+        },
+        "get_time": {
+          "16b": 4,
+          "32b": 3,
+          "bytes": 20,
+          "total_insns": 7,
+          "pct_16b": 57.14,
+          "avg_insn_bytes": 2.857
+        },
+        "intpat": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "iterate": {
+          "16b": 19,
+          "32b": 6,
+          "bytes": 62,
+          "total_insns": 25,
+          "pct_16b": 76.0,
+          "avg_insn_bytes": 2.48
+        },
+        "list_known_crc": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "main": {
+          "16b": 234,
+          "32b": 143,
+          "bytes": 1040,
+          "total_insns": 377,
+          "pct_16b": 62.07,
+          "avg_insn_bytes": 2.759
+        },
+        "matrix_add_const": {
+          "16b": 13,
+          "32b": 5,
+          "bytes": 46,
+          "total_insns": 18,
+          "pct_16b": 72.22,
+          "avg_insn_bytes": 2.556
+        },
+        "matrix_known_crc": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "matrix_mul_const": {
+          "16b": 10,
+          "32b": 9,
+          "bytes": 56,
+          "total_insns": 19,
+          "pct_16b": 52.63,
+          "avg_insn_bytes": 2.947
+        },
+        "matrix_mul_matrix": {
+          "16b": 22,
+          "32b": 11,
+          "bytes": 88,
+          "total_insns": 33,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "matrix_mul_matrix_bitextract": {
+          "16b": 20,
+          "32b": 15,
+          "bytes": 100,
+          "total_insns": 35,
+          "pct_16b": 57.14,
+          "avg_insn_bytes": 2.857
+        },
+        "matrix_mul_vect": {
+          "16b": 9,
+          "32b": 9,
+          "bytes": 54,
+          "total_insns": 18,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "matrix_sum": {
+          "16b": 26,
+          "32b": 7,
+          "bytes": 80,
+          "total_insns": 33,
+          "pct_16b": 78.79,
+          "avg_insn_bytes": 2.424
+        },
+        "matrix_test": {
+          "16b": 41,
+          "32b": 19,
+          "bytes": 158,
+          "total_insns": 60,
+          "pct_16b": 68.33,
+          "avg_insn_bytes": 2.633
+        },
+        "memcpy": {
+          "16b": 90,
+          "32b": 14,
+          "bytes": 236,
+          "total_insns": 104,
+          "pct_16b": 86.54,
+          "avg_insn_bytes": 2.269
+        },
+        "memset": {
+          "16b": 44,
+          "32b": 18,
+          "bytes": 160,
+          "total_insns": 62,
+          "pct_16b": 70.97,
+          "avg_insn_bytes": 2.581
+        },
+        "number": {
+          "16b": 88,
+          "32b": 40,
+          "bytes": 336,
+          "total_insns": 128,
+          "pct_16b": 68.75,
+          "avg_insn_bytes": 2.625
+        },
+        "portable_fini": {
+          "16b": 12,
+          "32b": 2,
+          "bytes": 32,
+          "total_insns": 14,
+          "pct_16b": 85.71,
+          "avg_insn_bytes": 2.286
+        },
+        "portable_init": {
+          "16b": 16,
+          "32b": 4,
+          "bytes": 48,
+          "total_insns": 20,
+          "pct_16b": 80.0,
+          "avg_insn_bytes": 2.4
+        },
+        "scipat": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "start_time": {
+          "16b": 4,
+          "32b": 2,
+          "bytes": 16,
+          "total_insns": 6,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "state_known_crc": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "stop_time": {
+          "16b": 4,
+          "32b": 2,
+          "bytes": 16,
+          "total_insns": 6,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "systick_now_ticks": {
+          "16b": 12,
+          "32b": 8,
+          "bytes": 56,
+          "total_insns": 20,
+          "pct_16b": 60.0,
+          "avg_insn_bytes": 2.8
+        },
+        "time_in_secs": {
+          "16b": 4,
+          "32b": 2,
+          "bytes": 16,
+          "total_insns": 6,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "uart_putc": {
+          "16b": 12,
+          "32b": 2,
+          "bytes": 32,
+          "total_insns": 14,
+          "pct_16b": 85.71,
+          "avg_insn_bytes": 2.286
+        }
+      }
+    }
+  },
+  {
+    "name": "e902_O2",
+    "arch": "e902",
+    "elf": "/work/benchmark/e902/build_O2_it1/coremark_e902.elf",
+    "size": {
+      "text": 13368,
+      "data": 12,
+      "bss": 28,
+      "dec": 13408
+    },
+    "core_objects_sum": {
+      "text": 7138,
+      "rodata": 1342,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 2174,
+        "rodata": 1081,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 1558,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 1784,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 1126,
+        "rodata": 237,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 496,
+        "rodata": 24,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 282,
+        "rodata": 70,
+        "data": 12,
+        "bss": 28
+      },
+      "ee_printf.o": {
+        "text": 2378,
+        "rodata": 600,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 946,
+        "rodata": 24,
+        "data": 0,
+        "bss": 80
+      },
+      "crt0.o": {
+        "text": 1408,
+        "rodata": 0,
+        "data": 4,
+        "bss": 0
+      },
+      "mem_stubs.o": {
+        "text": 134,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 11104,
+        "flags": "AX"
+      },
+      ".rodata": {
+        "type": "PROGBITS",
+        "addr": 11104,
+        "size": 2264,
+        "flags": "A"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 28,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 2098,
+        "32b": 1465,
+        "bytes": 10056,
+        "literal_items": 257,
+        "literal_bytes": 1026,
+        "total_insns": 3563,
+        "pct_16b": 58.88,
+        "avg_insn_bytes": 2.822
+      },
+      "coremark_funcs": {
+        "16b": 1573,
+        "32b": 732,
+        "bytes": 6074,
+        "total_insns": 2305,
+        "pct_16b": 68.24,
+        "avg_insn_bytes": 2.635
+      },
+      "functions": {
+        "L_loop0": {
+          "16b": 3,
+          "32b": 3,
+          "bytes": 18,
+          "total_insns": 6,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop0_done": {
+          "16b": 1,
+          "32b": 6,
+          "bytes": 26,
+          "total_insns": 7,
+          "pct_16b": 14.29,
+          "avg_insn_bytes": 3.714
+        },
+        "L_loop1": {
+          "16b": 2,
+          "32b": 2,
+          "bytes": 12,
+          "total_insns": 4,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop1_done": {
+          "16b": 0,
+          "32b": 10,
+          "bytes": 40,
+          "total_insns": 10,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__dummy": {
+          "16b": 1,
+          "32b": 0,
+          "bytes": 2,
+          "total_insns": 1,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__exit": {
+          "16b": 3,
+          "32b": 5,
+          "bytes": 26,
+          "total_insns": 8,
+          "pct_16b": 37.5,
+          "avg_insn_bytes": 3.25
+        },
+        "__fail": {
+          "16b": 3,
+          "32b": 7,
+          "bytes": 34,
+          "total_insns": 10,
+          "pct_16b": 30.0,
+          "avg_insn_bytes": 3.4
+        },
+        "__start": {
+          "16b": 0,
+          "32b": 8,
+          "bytes": 32,
+          "total_insns": 8,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__synchronous_exception": {
+          "16b": 7,
+          "32b": 11,
+          "bytes": 58,
+          "total_insns": 18,
+          "pct_16b": 38.89,
+          "avg_insn_bytes": 3.222
+        },
+        "__to_main": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__udivdi3": {
+          "16b": 0,
+          "32b": 275,
+          "bytes": 1100,
+          "total_insns": 275,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "calc_func": {
+          "16b": 43,
+          "32b": 35,
+          "bytes": 226,
+          "total_insns": 78,
+          "pct_16b": 55.13,
+          "avg_insn_bytes": 2.897
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 18,
+          "32b": 1,
+          "bytes": 40,
+          "total_insns": 19,
+          "pct_16b": 94.74,
+          "avg_insn_bytes": 2.105
+        },
+        "cmp_idx": {
+          "16b": 11,
+          "32b": 12,
+          "bytes": 70,
+          "total_insns": 23,
+          "pct_16b": 47.83,
+          "avg_insn_bytes": 3.043
+        },
+        "core_bench_list": {
+          "16b": 133,
+          "32b": 39,
+          "bytes": 422,
+          "total_insns": 172,
+          "pct_16b": 77.33,
+          "avg_insn_bytes": 2.453
+        },
+        "core_bench_matrix": {
+          "16b": 15,
+          "32b": 0,
+          "bytes": 30,
+          "total_insns": 15,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "core_bench_state": {
+          "16b": 77,
+          "32b": 34,
+          "bytes": 290,
+          "total_insns": 111,
+          "pct_16b": 69.37,
+          "avg_insn_bytes": 2.613
+        },
+        "core_init_matrix": {
+          "16b": 70,
+          "32b": 26,
+          "bytes": 244,
+          "total_insns": 96,
+          "pct_16b": 72.92,
+          "avg_insn_bytes": 2.542
+        },
+        "core_init_state": {
+          "16b": 69,
+          "32b": 36,
+          "bytes": 282,
+          "total_insns": 105,
+          "pct_16b": 65.71,
+          "avg_insn_bytes": 2.686
+        },
+        "core_list_init": {
+          "16b": 67,
+          "32b": 50,
+          "bytes": 334,
+          "total_insns": 117,
+          "pct_16b": 57.26,
+          "avg_insn_bytes": 2.855
+        },
+        "core_list_mergesort": {
+          "16b": 68,
+          "32b": 17,
+          "bytes": 204,
+          "total_insns": 85,
+          "pct_16b": 80.0,
+          "avg_insn_bytes": 2.4
+        },
+        "core_state_transition": {
+          "16b": 121,
+          "32b": 68,
+          "bytes": 514,
+          "total_insns": 189,
+          "pct_16b": 64.02,
+          "avg_insn_bytes": 2.72
+        },
+        "crc16": {
+          "16b": 25,
+          "32b": 12,
+          "bytes": 98,
+          "total_insns": 37,
+          "pct_16b": 67.57,
+          "avg_insn_bytes": 2.649
+        },
+        "crcu16": {
+          "16b": 25,
+          "32b": 10,
+          "bytes": 90,
+          "total_insns": 35,
+          "pct_16b": 71.43,
+          "avg_insn_bytes": 2.571
+        },
+        "crcu32": {
+          "16b": 50,
+          "32b": 21,
+          "bytes": 184,
+          "total_insns": 71,
+          "pct_16b": 70.42,
+          "avg_insn_bytes": 2.592
+        },
+        "ee_printf": {
+          "16b": 322,
+          "32b": 271,
+          "bytes": 1728,
+          "total_insns": 593,
+          "pct_16b": 54.3,
+          "avg_insn_bytes": 2.914
+        },
+        "get_seed_32": {
+          "16b": 13,
+          "32b": 12,
+          "bytes": 74,
+          "total_insns": 25,
+          "pct_16b": 52.0,
+          "avg_insn_bytes": 2.96
+        },
+        "get_time": {
+          "16b": 3,
+          "32b": 8,
+          "bytes": 38,
+          "total_insns": 11,
+          "pct_16b": 27.27,
+          "avg_insn_bytes": 3.455
+        },
+        "iterate": {
+          "16b": 22,
+          "32b": 12,
+          "bytes": 92,
+          "total_insns": 34,
+          "pct_16b": 64.71,
+          "avg_insn_bytes": 2.706
+        },
+        "main": {
+          "16b": 408,
+          "32b": 243,
+          "bytes": 1788,
+          "total_insns": 651,
+          "pct_16b": 62.67,
+          "avg_insn_bytes": 2.747
+        },
+        "matrix_mul_matrix": {
+          "16b": 40,
+          "32b": 13,
+          "bytes": 132,
+          "total_insns": 53,
+          "pct_16b": 75.47,
+          "avg_insn_bytes": 2.491
+        },
+        "matrix_mul_matrix_bitextract": {
+          "16b": 42,
+          "32b": 16,
+          "bytes": 148,
+          "total_insns": 58,
+          "pct_16b": 72.41,
+          "avg_insn_bytes": 2.552
+        },
+        "matrix_mul_vect": {
+          "16b": 24,
+          "32b": 10,
+          "bytes": 88,
+          "total_insns": 34,
+          "pct_16b": 70.59,
+          "avg_insn_bytes": 2.588
+        },
+        "matrix_test": {
+          "16b": 243,
+          "32b": 77,
+          "bytes": 794,
+          "total_insns": 320,
+          "pct_16b": 75.94,
+          "avg_insn_bytes": 2.481
+        },
+        "memcpy": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "memset": {
+          "16b": 4,
+          "32b": 4,
+          "bytes": 24,
+          "total_insns": 8,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "number": {
+          "16b": 121,
+          "32b": 71,
+          "bytes": 526,
+          "total_insns": 192,
+          "pct_16b": 63.02,
+          "avg_insn_bytes": 2.74
+        },
+        "portable_fini": {
+          "16b": 20,
+          "32b": 12,
+          "bytes": 88,
+          "total_insns": 32,
+          "pct_16b": 62.5,
+          "avg_insn_bytes": 2.75
+        },
+        "portable_init": {
+          "16b": 2,
+          "32b": 1,
+          "bytes": 8,
+          "total_insns": 3,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "start_time": {
+          "16b": 2,
+          "32b": 9,
+          "bytes": 40,
+          "total_insns": 11,
+          "pct_16b": 18.18,
+          "avg_insn_bytes": 3.636
+        },
+        "stop_time": {
+          "16b": 2,
+          "32b": 9,
+          "bytes": 40,
+          "total_insns": 11,
+          "pct_16b": 18.18,
+          "avg_insn_bytes": 3.636
+        },
+        "time_in_secs": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "trap_handler": {
+          "16b": 3,
+          "32b": 0,
+          "bytes": 6,
+          "total_insns": 3,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "uart_putc": {
+          "16b": 1,
+          "32b": 2,
+          "bytes": 10,
+          "total_insns": 3,
+          "pct_16b": 33.33,
+          "avg_insn_bytes": 3.333
+        }
+      }
+    }
+  },
+  {
+    "name": "e902_O3",
+    "arch": "e902",
+    "elf": "/work/benchmark/e902/build_O3_it1/coremark_e902.elf",
+    "size": {
+      "text": 16244,
+      "data": 12,
+      "bss": 28,
+      "dec": 16284
+    },
+    "core_objects_sum": {
+      "text": 9962,
+      "rodata": 1312,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 2430,
+        "rodata": 1051,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 2556,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 1912,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 1372,
+        "rodata": 237,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 1692,
+        "rodata": 24,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 282,
+        "rodata": 70,
+        "data": 12,
+        "bss": 28
+      },
+      "ee_printf.o": {
+        "text": 3176,
+        "rodata": 600,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 1208,
+        "rodata": 24,
+        "data": 0,
+        "bss": 80
+      },
+      "crt0.o": {
+        "text": 1408,
+        "rodata": 0,
+        "data": 4,
+        "bss": 0
+      },
+      "mem_stubs.o": {
+        "text": 506,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 14016,
+        "flags": "AX"
+      },
+      ".rodata": {
+        "type": "PROGBITS",
+        "addr": 14016,
+        "size": 2228,
+        "flags": "A"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 28,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 2701,
+        "32b": 1892,
+        "bytes": 12970,
+        "literal_items": 257,
+        "literal_bytes": 1026,
+        "total_insns": 4593,
+        "pct_16b": 58.81,
+        "avg_insn_bytes": 2.824
+      },
+      "coremark_funcs": {
+        "16b": 2036,
+        "32b": 968,
+        "bytes": 7944,
+        "total_insns": 3004,
+        "pct_16b": 67.78,
+        "avg_insn_bytes": 2.644
+      },
+      "functions": {
+        "L_loop0": {
+          "16b": 3,
+          "32b": 3,
+          "bytes": 18,
+          "total_insns": 6,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop0_done": {
+          "16b": 1,
+          "32b": 6,
+          "bytes": 26,
+          "total_insns": 7,
+          "pct_16b": 14.29,
+          "avg_insn_bytes": 3.714
+        },
+        "L_loop1": {
+          "16b": 2,
+          "32b": 2,
+          "bytes": 12,
+          "total_insns": 4,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop1_done": {
+          "16b": 0,
+          "32b": 10,
+          "bytes": 40,
+          "total_insns": 10,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__dummy": {
+          "16b": 1,
+          "32b": 0,
+          "bytes": 2,
+          "total_insns": 1,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__exit": {
+          "16b": 3,
+          "32b": 5,
+          "bytes": 26,
+          "total_insns": 8,
+          "pct_16b": 37.5,
+          "avg_insn_bytes": 3.25
+        },
+        "__fail": {
+          "16b": 3,
+          "32b": 7,
+          "bytes": 34,
+          "total_insns": 10,
+          "pct_16b": 30.0,
+          "avg_insn_bytes": 3.4
+        },
+        "__start": {
+          "16b": 0,
+          "32b": 8,
+          "bytes": 32,
+          "total_insns": 8,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__synchronous_exception": {
+          "16b": 7,
+          "32b": 11,
+          "bytes": 58,
+          "total_insns": 18,
+          "pct_16b": 38.89,
+          "avg_insn_bytes": 3.222
+        },
+        "__to_main": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__udivdi3": {
+          "16b": 0,
+          "32b": 275,
+          "bytes": 1100,
+          "total_insns": 275,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 76,
+          "32b": 72,
+          "bytes": 440,
+          "total_insns": 148,
+          "pct_16b": 51.35,
+          "avg_insn_bytes": 2.973
+        },
+        "core_bench_list": {
+          "16b": 228,
+          "32b": 87,
+          "bytes": 804,
+          "total_insns": 315,
+          "pct_16b": 72.38,
+          "avg_insn_bytes": 2.552
+        },
+        "core_bench_matrix": {
+          "16b": 14,
+          "32b": 1,
+          "bytes": 32,
+          "total_insns": 15,
+          "pct_16b": 93.33,
+          "avg_insn_bytes": 2.133
+        },
+        "core_bench_state": {
+          "16b": 95,
+          "32b": 51,
+          "bytes": 394,
+          "total_insns": 146,
+          "pct_16b": 65.07,
+          "avg_insn_bytes": 2.699
+        },
+        "core_init_matrix": {
+          "16b": 70,
+          "32b": 26,
+          "bytes": 244,
+          "total_insns": 96,
+          "pct_16b": 72.92,
+          "avg_insn_bytes": 2.542
+        },
+        "core_init_state": {
+          "16b": 84,
+          "32b": 63,
+          "bytes": 420,
+          "total_insns": 147,
+          "pct_16b": 57.14,
+          "avg_insn_bytes": 2.857
+        },
+        "core_list_init": {
+          "16b": 120,
+          "32b": 79,
+          "bytes": 556,
+          "total_insns": 199,
+          "pct_16b": 60.3,
+          "avg_insn_bytes": 2.794
+        },
+        "core_state_transition": {
+          "16b": 121,
+          "32b": 68,
+          "bytes": 514,
+          "total_insns": 189,
+          "pct_16b": 64.02,
+          "avg_insn_bytes": 2.72
+        },
+        "crc16": {
+          "16b": 118,
+          "32b": 31,
+          "bytes": 360,
+          "total_insns": 149,
+          "pct_16b": 79.19,
+          "avg_insn_bytes": 2.416
+        },
+        "crcu16": {
+          "16b": 116,
+          "32b": 31,
+          "bytes": 356,
+          "total_insns": 147,
+          "pct_16b": 78.91,
+          "avg_insn_bytes": 2.422
+        },
+        "crcu32": {
+          "16b": 229,
+          "32b": 65,
+          "bytes": 718,
+          "total_insns": 294,
+          "pct_16b": 77.89,
+          "avg_insn_bytes": 2.442
+        },
+        "ee_printf": {
+          "16b": 438,
+          "32b": 408,
+          "bytes": 2508,
+          "total_insns": 846,
+          "pct_16b": 51.77,
+          "avg_insn_bytes": 2.965
+        },
+        "get_seed_32": {
+          "16b": 13,
+          "32b": 12,
+          "bytes": 74,
+          "total_insns": 25,
+          "pct_16b": 52.0,
+          "avg_insn_bytes": 2.96
+        },
+        "get_time": {
+          "16b": 3,
+          "32b": 8,
+          "bytes": 38,
+          "total_insns": 11,
+          "pct_16b": 27.27,
+          "avg_insn_bytes": 3.455
+        },
+        "iterate": {
+          "16b": 26,
+          "32b": 13,
+          "bytes": 104,
+          "total_insns": 39,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "main": {
+          "16b": 456,
+          "32b": 279,
+          "bytes": 2028,
+          "total_insns": 735,
+          "pct_16b": 62.04,
+          "avg_insn_bytes": 2.759
+        },
+        "matrix_test": {
+          "16b": 281,
+          "32b": 102,
+          "bytes": 970,
+          "total_insns": 383,
+          "pct_16b": 73.37,
+          "avg_insn_bytes": 2.533
+        },
+        "memcpy": {
+          "16b": 16,
+          "32b": 25,
+          "bytes": 132,
+          "total_insns": 41,
+          "pct_16b": 39.02,
+          "avg_insn_bytes": 3.22
+        },
+        "memset": {
+          "16b": 18,
+          "32b": 36,
+          "bytes": 180,
+          "total_insns": 54,
+          "pct_16b": 33.33,
+          "avg_insn_bytes": 3.333
+        },
+        "number": {
+          "16b": 121,
+          "32b": 71,
+          "bytes": 526,
+          "total_insns": 192,
+          "pct_16b": 63.02,
+          "avg_insn_bytes": 2.74
+        },
+        "portable_fini": {
+          "16b": 20,
+          "32b": 12,
+          "bytes": 88,
+          "total_insns": 32,
+          "pct_16b": 62.5,
+          "avg_insn_bytes": 2.75
+        },
+        "portable_init": {
+          "16b": 2,
+          "32b": 1,
+          "bytes": 8,
+          "total_insns": 3,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "start_time": {
+          "16b": 2,
+          "32b": 9,
+          "bytes": 40,
+          "total_insns": 11,
+          "pct_16b": 18.18,
+          "avg_insn_bytes": 3.636
+        },
+        "stop_time": {
+          "16b": 2,
+          "32b": 9,
+          "bytes": 40,
+          "total_insns": 11,
+          "pct_16b": 18.18,
+          "avg_insn_bytes": 3.636
+        },
+        "time_in_secs": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "trap_handler": {
+          "16b": 3,
+          "32b": 0,
+          "bytes": 6,
+          "total_insns": 3,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "uart_putc": {
+          "16b": 1,
+          "32b": 2,
+          "bytes": 10,
+          "total_insns": 3,
+          "pct_16b": 33.33,
+          "avg_insn_bytes": 3.333
+        }
+      }
+    }
+  },
+  {
+    "name": "e902_O3_unroll",
+    "arch": "e902",
+    "elf": "/work/benchmark/e902/build_O3_unroll_it1/coremark_e902.elf",
+    "size": {
+      "text": 24736,
+      "data": 12,
+      "bss": 28,
+      "dec": 24776
+    },
+    "core_objects_sum": {
+      "text": 19602,
+      "rodata": 1324,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 2634,
+        "rodata": 1063,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 3236,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 8876,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 2216,
+        "rodata": 237,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 2640,
+        "rodata": 24,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 288,
+        "rodata": 70,
+        "data": 12,
+        "bss": 28
+      },
+      "ee_printf.o": {
+        "text": 4130,
+        "rodata": 600,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 2914,
+        "rodata": 24,
+        "data": 0,
+        "bss": 80
+      },
+      "crt0.o": {
+        "text": 1408,
+        "rodata": 0,
+        "data": 4,
+        "bss": 0
+      },
+      "mem_stubs.o": {
+        "text": 1718,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 22496,
+        "flags": "AX"
+      },
+      ".rodata": {
+        "type": "PROGBITS",
+        "addr": 22496,
+        "size": 2240,
+        "flags": "A"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 28,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 2795,
+        "32b": 3964,
+        "bytes": 21446,
+        "literal_items": 256,
+        "literal_bytes": 1024,
+        "total_insns": 6759,
+        "pct_16b": 41.35,
+        "avg_insn_bytes": 3.173
+      },
+      "coremark_funcs": {
+        "16b": 2011,
+        "32b": 2709,
+        "bytes": 14858,
+        "total_insns": 4720,
+        "pct_16b": 42.61,
+        "avg_insn_bytes": 3.148
+      },
+      "functions": {
+        "L_loop0": {
+          "16b": 3,
+          "32b": 3,
+          "bytes": 18,
+          "total_insns": 6,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop0_done": {
+          "16b": 1,
+          "32b": 6,
+          "bytes": 26,
+          "total_insns": 7,
+          "pct_16b": 14.29,
+          "avg_insn_bytes": 3.714
+        },
+        "L_loop1": {
+          "16b": 2,
+          "32b": 2,
+          "bytes": 12,
+          "total_insns": 4,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop1_done": {
+          "16b": 0,
+          "32b": 10,
+          "bytes": 40,
+          "total_insns": 10,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__dummy": {
+          "16b": 1,
+          "32b": 0,
+          "bytes": 2,
+          "total_insns": 1,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__exit": {
+          "16b": 3,
+          "32b": 5,
+          "bytes": 26,
+          "total_insns": 8,
+          "pct_16b": 37.5,
+          "avg_insn_bytes": 3.25
+        },
+        "__fail": {
+          "16b": 3,
+          "32b": 7,
+          "bytes": 34,
+          "total_insns": 10,
+          "pct_16b": 30.0,
+          "avg_insn_bytes": 3.4
+        },
+        "__start": {
+          "16b": 0,
+          "32b": 8,
+          "bytes": 32,
+          "total_insns": 8,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__synchronous_exception": {
+          "16b": 7,
+          "32b": 11,
+          "bytes": 58,
+          "total_insns": 18,
+          "pct_16b": 38.89,
+          "avg_insn_bytes": 3.222
+        },
+        "__to_main": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__udivdi3": {
+          "16b": 0,
+          "32b": 275,
+          "bytes": 1100,
+          "total_insns": 275,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 63,
+          "32b": 85,
+          "bytes": 466,
+          "total_insns": 148,
+          "pct_16b": 42.57,
+          "avg_insn_bytes": 3.149
+        },
+        "core_bench_list": {
+          "16b": 285,
+          "32b": 140,
+          "bytes": 1130,
+          "total_insns": 425,
+          "pct_16b": 67.06,
+          "avg_insn_bytes": 2.659
+        },
+        "core_bench_matrix": {
+          "16b": 13,
+          "32b": 2,
+          "bytes": 34,
+          "total_insns": 15,
+          "pct_16b": 86.67,
+          "avg_insn_bytes": 2.267
+        },
+        "core_bench_state": {
+          "16b": 148,
+          "32b": 209,
+          "bytes": 1132,
+          "total_insns": 357,
+          "pct_16b": 41.46,
+          "avg_insn_bytes": 3.171
+        },
+        "core_init_matrix": {
+          "16b": 96,
+          "32b": 126,
+          "bytes": 696,
+          "total_insns": 222,
+          "pct_16b": 43.24,
+          "avg_insn_bytes": 3.135
+        },
+        "core_init_state": {
+          "16b": 61,
+          "32b": 86,
+          "bytes": 466,
+          "total_insns": 147,
+          "pct_16b": 41.5,
+          "avg_insn_bytes": 3.17
+        },
+        "core_list_init": {
+          "16b": 155,
+          "32b": 102,
+          "bytes": 718,
+          "total_insns": 257,
+          "pct_16b": 60.31,
+          "avg_insn_bytes": 2.794
+        },
+        "core_state_transition": {
+          "16b": 91,
+          "32b": 98,
+          "bytes": 574,
+          "total_insns": 189,
+          "pct_16b": 48.15,
+          "avg_insn_bytes": 3.037
+        },
+        "crc16": {
+          "16b": 10,
+          "32b": 139,
+          "bytes": 576,
+          "total_insns": 149,
+          "pct_16b": 6.71,
+          "avg_insn_bytes": 3.866
+        },
+        "crcu16": {
+          "16b": 11,
+          "32b": 136,
+          "bytes": 566,
+          "total_insns": 147,
+          "pct_16b": 7.48,
+          "avg_insn_bytes": 3.85
+        },
+        "crcu32": {
+          "16b": 25,
+          "32b": 269,
+          "bytes": 1126,
+          "total_insns": 294,
+          "pct_16b": 8.5,
+          "avg_insn_bytes": 3.83
+        },
+        "ee_printf": {
+          "16b": 457,
+          "32b": 584,
+          "bytes": 3250,
+          "total_insns": 1041,
+          "pct_16b": 43.9,
+          "avg_insn_bytes": 3.122
+        },
+        "get_seed_32": {
+          "16b": 11,
+          "32b": 14,
+          "bytes": 78,
+          "total_insns": 25,
+          "pct_16b": 44.0,
+          "avg_insn_bytes": 3.12
+        },
+        "get_time": {
+          "16b": 1,
+          "32b": 10,
+          "bytes": 42,
+          "total_insns": 11,
+          "pct_16b": 9.09,
+          "avg_insn_bytes": 3.818
+        },
+        "iterate": {
+          "16b": 26,
+          "32b": 13,
+          "bytes": 104,
+          "total_insns": 39,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "main": {
+          "16b": 352,
+          "32b": 382,
+          "bytes": 2232,
+          "total_insns": 734,
+          "pct_16b": 47.96,
+          "avg_insn_bytes": 3.041
+        },
+        "matrix_test": {
+          "16b": 673,
+          "32b": 922,
+          "bytes": 5034,
+          "total_insns": 1595,
+          "pct_16b": 42.19,
+          "avg_insn_bytes": 3.156
+        },
+        "memcpy": {
+          "16b": 58,
+          "32b": 112,
+          "bytes": 564,
+          "total_insns": 170,
+          "pct_16b": 34.12,
+          "avg_insn_bytes": 3.318
+        },
+        "memset": {
+          "16b": 60,
+          "32b": 57,
+          "bytes": 348,
+          "total_insns": 117,
+          "pct_16b": 51.28,
+          "avg_insn_bytes": 2.974
+        },
+        "number": {
+          "16b": 142,
+          "32b": 113,
+          "bytes": 736,
+          "total_insns": 255,
+          "pct_16b": 55.69,
+          "avg_insn_bytes": 2.886
+        },
+        "portable_fini": {
+          "16b": 19,
+          "32b": 13,
+          "bytes": 90,
+          "total_insns": 32,
+          "pct_16b": 59.38,
+          "avg_insn_bytes": 2.812
+        },
+        "portable_init": {
+          "16b": 2,
+          "32b": 1,
+          "bytes": 8,
+          "total_insns": 3,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "start_time": {
+          "16b": 2,
+          "32b": 9,
+          "bytes": 40,
+          "total_insns": 11,
+          "pct_16b": 18.18,
+          "avg_insn_bytes": 3.636
+        },
+        "stop_time": {
+          "16b": 2,
+          "32b": 9,
+          "bytes": 40,
+          "total_insns": 11,
+          "pct_16b": 18.18,
+          "avg_insn_bytes": 3.636
+        },
+        "time_in_secs": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "trap_handler": {
+          "16b": 3,
+          "32b": 0,
+          "bytes": 6,
+          "total_insns": 3,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "uart_putc": {
+          "16b": 1,
+          "32b": 2,
+          "bytes": 10,
+          "total_insns": 3,
+          "pct_16b": 33.33,
+          "avg_insn_bytes": 3.333
+        }
+      }
+    }
+  },
+  {
+    "name": "e902_Os",
+    "arch": "e902",
+    "elf": "/work/benchmark/e902/build_Os_it1/coremark_e902.elf",
+    "size": {
+      "text": 11200,
+      "data": 12,
+      "bss": 28,
+      "dec": 11240
+    },
+    "core_objects_sum": {
+      "text": 5390,
+      "rodata": 1372,
+      "data": 12,
+      "bss": 0
+    },
+    "objects": {
+      "core_main.o": {
+        "text": 2056,
+        "rodata": 1083,
+        "data": 12,
+        "bss": 0
+      },
+      "core_list_join.o": {
+        "text": 1308,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_matrix.o": {
+        "text": 992,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      },
+      "core_state.o": {
+        "text": 806,
+        "rodata": 269,
+        "data": 0,
+        "bss": 0
+      },
+      "core_util.o": {
+        "text": 228,
+        "rodata": 20,
+        "data": 0,
+        "bss": 0
+      },
+      "core_portme.o": {
+        "text": 276,
+        "rodata": 70,
+        "data": 12,
+        "bss": 28
+      },
+      "ee_printf.o": {
+        "text": 1938,
+        "rodata": 180,
+        "data": 0,
+        "bss": 0
+      },
+      "cvt.o": {
+        "text": 784,
+        "rodata": 24,
+        "data": 0,
+        "bss": 80
+      },
+      "crt0.o": {
+        "text": 1408,
+        "rodata": 0,
+        "data": 4,
+        "bss": 0
+      },
+      "mem_stubs.o": {
+        "text": 134,
+        "rodata": 0,
+        "data": 0,
+        "bss": 0
+      }
+    },
+    "sections": {
+      ".text": {
+        "type": "PROGBITS",
+        "addr": 0,
+        "size": 9328,
+        "flags": "AX"
+      },
+      ".rodata": {
+        "type": "PROGBITS",
+        "addr": 9328,
+        "size": 1872,
+        "flags": "A"
+      },
+      ".data": {
+        "type": "PROGBITS",
+        "addr": 536870912,
+        "size": 12,
+        "flags": "WA"
+      },
+      ".bss": {
+        "type": "NOBITS",
+        "addr": 536870928,
+        "size": 28,
+        "flags": "WA"
+      }
+    },
+    "disasm": {
+      "total": {
+        "16b": 1702,
+        "32b": 1218,
+        "bytes": 8276,
+        "literal_items": 256,
+        "literal_bytes": 1024,
+        "total_insns": 2920,
+        "pct_16b": 58.29,
+        "avg_insn_bytes": 2.834
+      },
+      "coremark_funcs": {
+        "16b": 1272,
+        "32b": 546,
+        "bytes": 4728,
+        "total_insns": 1818,
+        "pct_16b": 69.97,
+        "avg_insn_bytes": 2.601
+      },
+      "functions": {
+        "L_loop0": {
+          "16b": 3,
+          "32b": 3,
+          "bytes": 18,
+          "total_insns": 6,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop0_done": {
+          "16b": 1,
+          "32b": 6,
+          "bytes": 26,
+          "total_insns": 7,
+          "pct_16b": 14.29,
+          "avg_insn_bytes": 3.714
+        },
+        "L_loop1": {
+          "16b": 2,
+          "32b": 2,
+          "bytes": 12,
+          "total_insns": 4,
+          "pct_16b": 50.0,
+          "avg_insn_bytes": 3.0
+        },
+        "L_loop1_done": {
+          "16b": 0,
+          "32b": 10,
+          "bytes": 40,
+          "total_insns": 10,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__dummy": {
+          "16b": 1,
+          "32b": 0,
+          "bytes": 2,
+          "total_insns": 1,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "__exit": {
+          "16b": 3,
+          "32b": 5,
+          "bytes": 26,
+          "total_insns": 8,
+          "pct_16b": 37.5,
+          "avg_insn_bytes": 3.25
+        },
+        "__fail": {
+          "16b": 3,
+          "32b": 7,
+          "bytes": 34,
+          "total_insns": 10,
+          "pct_16b": 30.0,
+          "avg_insn_bytes": 3.4
+        },
+        "__start": {
+          "16b": 0,
+          "32b": 8,
+          "bytes": 32,
+          "total_insns": 8,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__synchronous_exception": {
+          "16b": 7,
+          "32b": 11,
+          "bytes": 58,
+          "total_insns": 18,
+          "pct_16b": 38.89,
+          "avg_insn_bytes": 3.222
+        },
+        "__to_main": {
+          "16b": 0,
+          "32b": 1,
+          "bytes": 4,
+          "total_insns": 1,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "__udivdi3": {
+          "16b": 0,
+          "32b": 275,
+          "bytes": 1100,
+          "total_insns": 275,
+          "pct_16b": 0.0,
+          "avg_insn_bytes": 4.0
+        },
+        "calc_func": {
+          "16b": 33,
+          "32b": 32,
+          "bytes": 194,
+          "total_insns": 65,
+          "pct_16b": 50.77,
+          "avg_insn_bytes": 2.985
+        },
+        "check_data_types": {
+          "16b": 2,
+          "32b": 0,
+          "bytes": 4,
+          "total_insns": 2,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "cmp_complex": {
+          "16b": 17,
+          "32b": 1,
+          "bytes": 38,
+          "total_insns": 18,
+          "pct_16b": 94.44,
+          "avg_insn_bytes": 2.111
+        },
+        "cmp_idx": {
+          "16b": 11,
+          "32b": 8,
+          "bytes": 54,
+          "total_insns": 19,
+          "pct_16b": 57.89,
+          "avg_insn_bytes": 2.842
+        },
+        "core_bench_list": {
+          "16b": 112,
+          "32b": 26,
+          "bytes": 328,
+          "total_insns": 138,
+          "pct_16b": 81.16,
+          "avg_insn_bytes": 2.377
+        },
+        "core_bench_matrix": {
+          "16b": 15,
+          "32b": 0,
+          "bytes": 30,
+          "total_insns": 15,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "core_bench_state": {
+          "16b": 67,
+          "32b": 27,
+          "bytes": 242,
+          "total_insns": 94,
+          "pct_16b": 71.28,
+          "avg_insn_bytes": 2.574
+        },
+        "core_init_matrix": {
+          "16b": 53,
+          "32b": 18,
+          "bytes": 178,
+          "total_insns": 71,
+          "pct_16b": 74.65,
+          "avg_insn_bytes": 2.507
+        },
+        "core_init_state": {
+          "16b": 52,
+          "32b": 25,
+          "bytes": 204,
+          "total_insns": 77,
+          "pct_16b": 67.53,
+          "avg_insn_bytes": 2.649
+        },
+        "core_list_find": {
+          "16b": 9,
+          "32b": 7,
+          "bytes": 46,
+          "total_insns": 16,
+          "pct_16b": 56.25,
+          "avg_insn_bytes": 2.875
+        },
+        "core_list_init": {
+          "16b": 65,
+          "32b": 30,
+          "bytes": 250,
+          "total_insns": 95,
+          "pct_16b": 68.42,
+          "avg_insn_bytes": 2.632
+        },
+        "core_list_insert_new": {
+          "16b": 12,
+          "32b": 11,
+          "bytes": 68,
+          "total_insns": 23,
+          "pct_16b": 52.17,
+          "avg_insn_bytes": 2.957
+        },
+        "core_list_mergesort": {
+          "16b": 62,
+          "32b": 10,
+          "bytes": 164,
+          "total_insns": 72,
+          "pct_16b": 86.11,
+          "avg_insn_bytes": 2.278
+        },
+        "core_list_remove": {
+          "16b": 9,
+          "32b": 1,
+          "bytes": 22,
+          "total_insns": 10,
+          "pct_16b": 90.0,
+          "avg_insn_bytes": 2.2
+        },
+        "core_list_reverse": {
+          "16b": 9,
+          "32b": 0,
+          "bytes": 18,
+          "total_insns": 9,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "core_state_transition": {
+          "16b": 79,
+          "32b": 39,
+          "bytes": 314,
+          "total_insns": 118,
+          "pct_16b": 66.95,
+          "avg_insn_bytes": 2.661
+        },
+        "crc16": {
+          "16b": 3,
+          "32b": 0,
+          "bytes": 6,
+          "total_insns": 3,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "crcu16": {
+          "16b": 10,
+          "32b": 2,
+          "bytes": 28,
+          "total_insns": 12,
+          "pct_16b": 83.33,
+          "avg_insn_bytes": 2.333
+        },
+        "crcu32": {
+          "16b": 12,
+          "32b": 1,
+          "bytes": 28,
+          "total_insns": 13,
+          "pct_16b": 92.31,
+          "avg_insn_bytes": 2.154
+        },
+        "crcu8": {
+          "16b": 15,
+          "32b": 6,
+          "bytes": 54,
+          "total_insns": 21,
+          "pct_16b": 71.43,
+          "avg_insn_bytes": 2.571
+        },
+        "ee_printf": {
+          "16b": 238,
+          "32b": 229,
+          "bytes": 1392,
+          "total_insns": 467,
+          "pct_16b": 50.96,
+          "avg_insn_bytes": 2.981
+        },
+        "get_seed_32": {
+          "16b": 14,
+          "32b": 12,
+          "bytes": 76,
+          "total_insns": 26,
+          "pct_16b": 53.85,
+          "avg_insn_bytes": 2.923
+        },
+        "get_time": {
+          "16b": 3,
+          "32b": 8,
+          "bytes": 38,
+          "total_insns": 11,
+          "pct_16b": 27.27,
+          "avg_insn_bytes": 3.455
+        },
+        "iterate": {
+          "16b": 22,
+          "32b": 12,
+          "bytes": 92,
+          "total_insns": 34,
+          "pct_16b": 64.71,
+          "avg_insn_bytes": 2.706
+        },
+        "main": {
+          "16b": 375,
+          "32b": 232,
+          "bytes": 1678,
+          "total_insns": 607,
+          "pct_16b": 61.78,
+          "avg_insn_bytes": 2.764
+        },
+        "matrix_add_const": {
+          "16b": 11,
+          "32b": 5,
+          "bytes": 42,
+          "total_insns": 16,
+          "pct_16b": 68.75,
+          "avg_insn_bytes": 2.625
+        },
+        "matrix_mul_const": {
+          "16b": 17,
+          "32b": 7,
+          "bytes": 62,
+          "total_insns": 24,
+          "pct_16b": 70.83,
+          "avg_insn_bytes": 2.583
+        },
+        "matrix_mul_matrix": {
+          "16b": 36,
+          "32b": 12,
+          "bytes": 120,
+          "total_insns": 48,
+          "pct_16b": 75.0,
+          "avg_insn_bytes": 2.5
+        },
+        "matrix_mul_matrix_bitextract": {
+          "16b": 39,
+          "32b": 14,
+          "bytes": 134,
+          "total_insns": 53,
+          "pct_16b": 73.58,
+          "avg_insn_bytes": 2.528
+        },
+        "matrix_mul_vect": {
+          "16b": 20,
+          "32b": 11,
+          "bytes": 84,
+          "total_insns": 31,
+          "pct_16b": 64.52,
+          "avg_insn_bytes": 2.71
+        },
+        "matrix_sum": {
+          "16b": 31,
+          "32b": 7,
+          "bytes": 90,
+          "total_insns": 38,
+          "pct_16b": 81.58,
+          "avg_insn_bytes": 2.368
+        },
+        "matrix_test": {
+          "16b": 74,
+          "32b": 2,
+          "bytes": 156,
+          "total_insns": 76,
+          "pct_16b": 97.37,
+          "avg_insn_bytes": 2.053
+        },
+        "memcpy": {
+          "16b": 4,
+          "32b": 5,
+          "bytes": 28,
+          "total_insns": 9,
+          "pct_16b": 44.44,
+          "avg_insn_bytes": 3.111
+        },
+        "memset": {
+          "16b": 5,
+          "32b": 2,
+          "bytes": 18,
+          "total_insns": 7,
+          "pct_16b": 71.43,
+          "avg_insn_bytes": 2.571
+        },
+        "number": {
+          "16b": 95,
+          "32b": 63,
+          "bytes": 442,
+          "total_insns": 158,
+          "pct_16b": 60.13,
+          "avg_insn_bytes": 2.797
+        },
+        "portable_fini": {
+          "16b": 18,
+          "32b": 8,
+          "bytes": 68,
+          "total_insns": 26,
+          "pct_16b": 69.23,
+          "avg_insn_bytes": 2.615
+        },
+        "portable_init": {
+          "16b": 2,
+          "32b": 1,
+          "bytes": 8,
+          "total_insns": 3,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "read_mcycle64": {
+          "16b": 1,
+          "32b": 4,
+          "bytes": 18,
+          "total_insns": 5,
+          "pct_16b": 20.0,
+          "avg_insn_bytes": 3.6
+        },
+        "start_time": {
+          "16b": 9,
+          "32b": 4,
+          "bytes": 34,
+          "total_insns": 13,
+          "pct_16b": 69.23,
+          "avg_insn_bytes": 2.615
+        },
+        "stop_time": {
+          "16b": 9,
+          "32b": 4,
+          "bytes": 34,
+          "total_insns": 13,
+          "pct_16b": 69.23,
+          "avg_insn_bytes": 2.615
+        },
+        "time_in_secs": {
+          "16b": 6,
+          "32b": 3,
+          "bytes": 24,
+          "total_insns": 9,
+          "pct_16b": 66.67,
+          "avg_insn_bytes": 2.667
+        },
+        "trap_handler": {
+          "16b": 3,
+          "32b": 0,
+          "bytes": 6,
+          "total_insns": 3,
+          "pct_16b": 100.0,
+          "avg_insn_bytes": 2.0
+        },
+        "uart_putc": {
+          "16b": 3,
+          "32b": 1,
+          "bytes": 10,
+          "total_insns": 4,
+          "pct_16b": 75.0,
+          "avg_insn_bytes": 2.5
+        }
+      }
+    }
+  }
+]

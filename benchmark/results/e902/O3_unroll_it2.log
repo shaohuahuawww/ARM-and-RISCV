@@ -1,0 +1,34 @@
+	******START TO LOAD PROGRAM******
+
+WARNING: ../logical/tb/tb.v:102: $readmemh(data.pat): Not enough words in the file for the requested range [0:65535].
+[E902-HB] total_cyc=100000 active=1 win_cyc=84434 win_inst=52754 pc=00003946
+[E902-HB] total_cyc=200000 active=1 win_cyc=184434 win_inst=104528 pc=00003bce
+[E902-HB] total_cyc=300000 active=1 win_cyc=284434 win_inst=187473 pc=000036ba
+[E902-HB] total_cyc=400000 active=1 win_cyc=384434 win_inst=256535 pc=0000248e
+[E902-HB] total_cyc=500000 active=1 win_cyc=484434 win_inst=326632 pc=00002482
+[E902-HB] total_cyc=600000 active=1 win_cyc=584434 win_inst=380905 pc=000031e4
+[E902-HB] total_cyc=700000 active=1 win_cyc=684434 win_inst=451665 pc=00004e56
+[E902-HB] total_cyc=800000 active=1 win_cyc=784434 win_inst=521199 pc=000044a8
+[E902-MON] cycles=878047 instret=591456
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 878030
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+[E902-HB] total_cyc=900000 active=0 win_cyc=878048 win_inst=591457 pc=00000914
+Iterations       : 2
+Compiler version : GCC13.2.0
+Compiler flags   : -O3 -march=rv32emc -mabi=ilp32e -funroll-loops
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x72be
+Errors detected
+[E902-PORT] Total mcycle: 878030, Cycles/Iter: 439015, CoreMark/MHz: 2.2778
+
+**********************************************
+*    simulation finished successfully        *
+**********************************************
+../logical/tb/tb.v:204: $finish called at 91224150 (100ps)

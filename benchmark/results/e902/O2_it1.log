@@ -1,0 +1,29 @@
+	******START TO LOAD PROGRAM******
+
+WARNING: ../logical/tb/tb.v:102: $readmemh(data.pat): Not enough words in the file for the requested range [0:65535].
+[E902-HB] total_cyc=100000 active=1 win_cyc=80572 win_inst=51417 pc=00001d88
+[E902-HB] total_cyc=200000 active=1 win_cyc=180572 win_inst=103941 pc=00001d84
+[E902-HB] total_cyc=300000 active=1 win_cyc=280572 win_inst=186983 pc=00002656
+[E902-HB] total_cyc=400000 active=1 win_cyc=380572 win_inst=257838 pc=00001670
+[E902-MON] cycles=461063 instret=318606
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 461045
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 1
+Compiler version : GCC13.2.0
+Compiler flags   : -O2 -march=rv32emc -mabi=ilp32e 
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xe714
+Errors detected
+[E902-PORT] Total mcycle: 461045, Cycles/Iter: 461045, CoreMark/MHz: 2.1689
+
+**********************************************
+*    simulation finished successfully        *
+**********************************************
+../logical/tb/tb.v:204: $finish called at 49900850 (100ps)

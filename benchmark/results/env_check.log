@@ -1,0 +1,123 @@
+=== HOST OS & VIRTUALIZATION CHECK ===
+Wed Nov 18 14:24:43 UTC 2026
+Linux localhost.localdomain 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue Jun 4 14:43:51 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+CentOS Linux release 7.9.2009 (Core)
+none
+Dell Inc.
+PowerEdge R7525
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                256
+On-line CPU(s) list:   0-255
+Thread(s) per core:    2
+Core(s) per socket:    64
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             AuthenticAMD
+CPU family:            25
+Model:                 1
+Model name:            AMD EPYC 7763 64-Core Processor
+Stepping:              1
+CPU MHz:               2450.000
+CPU max MHz:           2450.0000
+CPU min MHz:           1500.0000
+BogoMIPS:              4890.70
+Virtualization:        AMD-V
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              512K
+=== HOST FILE CHECK ===
+./benchmark/m3/build_O2_ic1/coremark_m3.elf: ELF 32-bit LSB executable, ARM, version 1 (SYSV), statically linked, not stripped
+./benchmark/e902/build_O2_it1/coremark_e902.elf: ELF 32-bit LSB executable, version 1 (SYSV), statically linked, not stripped
+./opene902/smart_run/tests/bin/Srec2vmem: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, for GNU/Linux 2.6.18, BuildID[sha1]=63b3877a85f45a633e14684b99106724785960af, not stripped
+=== DOCKER INFO ===
+Docker version 29.8.1, build 4a63305
+Created=2026-11-17T11:18:41.545641807+08:00 Arch=amd64 OS=linux
+=== CONTAINER OS & TOOLCHAIN VERSIONS ===
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.5 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+riscv64-unknown-elf-gcc (13.2.0-11ubuntu1+12) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)
+Copyright (c) 2003-2023 Fabrice Bellard and the QEMU Project developers
+Icarus Verilog version 12.0 (stable) ()
+
+Copyright (c) 2000-2021 Stephen Williams (steve@icarus.com)
+
+=== ELF HEADERS ===
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x45
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          31936 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         5
+  Size of section headers:           40 (bytes)
+  Number of section headers:         21
+  Section header string table index: 20
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          31768 (bytes into file)
+  Flags:                             0x9, RVC, RVE, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         4
+  Size of section headers:           40 (bytes)
+  Number of section headers:         18
+  Section header string table index: 17
+=== COREMARK UPSTREAM MD5 CHECK ===
+core_list_join.c: OK
+core_main.c: OK
+core_matrix.c: OK
+core_state.c: OK
+core_util.c: OK
+coremark.h: FAILED
+=== BENCHMARK/COMMON SHA256SUM ===
+ca00e4e010ece47d7f040cb92aa50a95345a00d3171b59d088f6b243be06ce7b  benchmark/common/coremark/core_list_join.c
+17884c93c5b94378eb0ff02b4df3725756cf2addb9b8cbcaa6200a4649ff5ca7  benchmark/common/coremark/core_main.c
+ecdff717b5a5c4907d221a606760e25499899cbf617582c05d40db71c91351e4  benchmark/common/coremark/core_matrix.c
+f4b84bb0a3452c45a4daa664ab502bfdccbd31cb57d93e9ac490c60937717a4e  benchmark/common/coremark/core_state.c
+a3fbfcb9bb943b638624b8ece01c5836dd56a96d7bcde2697b248d077447327f  benchmark/common/coremark/core_util.c
+42642b9a06c7ed2b3bd9eda971b7c3868c4f5d27bf7ef6c4bba11291a0c2598a  benchmark/common/coremark/coremark.h
+7c57eaa23c780cd707db2304365d1ded372fd73dd107f16bdd091d9dd16fd742  benchmark/common/coremark/cvt.c
+42642b9a06c7ed2b3bd9eda971b7c3868c4f5d27bf7ef6c4bba11291a0c2598a  coremark/coremark.h

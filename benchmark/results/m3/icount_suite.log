@@ -1,0 +1,216 @@
+=== BUILD M3 O2 (-O2 ) ===
+mkdir -p build_O2_ic20
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c startup.c -o build_O2_ic20/startup.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c core_portme.c -o build_O2_ic20/core_portme.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c ee_printf.c -o build_O2_ic20/ee_printf.o
+ee_printf.c: In function 'eaddr':
+ee_printf.c:143:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  143 | eaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'iaddr':
+ee_printf.c:172:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  172 | iaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'ee_vsprintf':
+ee_printf.c:589:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  589 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:591:13: note: here
+  591 |             case 'a':
+      |             ^~~~
+ee_printf.c:612:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  612 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:614:13: note: here
+  614 |             case 'x':
+      |             ^~~~
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_main.c -o build_O2_ic20/core_main.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_list_join.c -o build_O2_ic20/core_list_join.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_matrix.c -o build_O2_ic20/core_matrix.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_state.c -o build_O2_ic20/core_state.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_util.c -o build_O2_ic20/core_util.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O2  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O2 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/cvt.c -o build_O2_ic20/cvt.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -T mps2_an385.ld -nostartfiles -Wl,--gc-sections -Wl,-Map=build_O2_ic20/coremark_m3.map build_O2_ic20/startup.o build_O2_ic20/core_portme.o build_O2_ic20/ee_printf.o build_O2_ic20/core_main.o build_O2_ic20/core_list_join.o build_O2_ic20/core_matrix.o build_O2_ic20/core_state.o build_O2_ic20/core_util.o build_O2_ic20/cvt.o -lc -lgcc -o build_O2_ic20/coremark_m3.elf
+arm-none-eabi-objcopy -O binary build_O2_ic20/coremark_m3.elf build_O2_ic20/coremark_m3.bin
+arm-none-eabi-objdump -d -S build_O2_ic20/coremark_m3.elf > build_O2_ic20/coremark_m3.obj
+arm-none-eabi-size build_O2_ic20/coremark_m3.elf
+   text	   data	    bss	    dec	    hex	filename
+  10112	     12	     40	  10164	   27b4	build_O2_ic20/coremark_m3.elf
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 147880
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 20
+Compiler version : GCC13.2.1 20231009
+Compiler flags   : -O2 -mcpu=cortex-m3 -mthumb 
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x4983
+Errors detected
+[M3-PORT] Total ticks (64b): 0x00000000000241a8 (147880 low32), SYSCLK_HZ=25000000
+=== BUILD M3 O3 (-O3 ) ===
+mkdir -p build_O3_ic20
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c startup.c -o build_O3_ic20/startup.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c core_portme.c -o build_O3_ic20/core_portme.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c ee_printf.c -o build_O3_ic20/ee_printf.o
+ee_printf.c: In function 'eaddr':
+ee_printf.c:143:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  143 | eaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'iaddr':
+ee_printf.c:172:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  172 | iaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'ee_vsprintf':
+ee_printf.c:589:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  589 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:591:13: note: here
+  591 |             case 'a':
+      |             ^~~~
+ee_printf.c:612:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  612 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:614:13: note: here
+  614 |             case 'x':
+      |             ^~~~
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_main.c -o build_O3_ic20/core_main.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_list_join.c -o build_O3_ic20/core_list_join.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_matrix.c -o build_O3_ic20/core_matrix.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_state.c -o build_O3_ic20/core_state.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_util.c -o build_O3_ic20/core_util.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/cvt.c -o build_O3_ic20/cvt.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -T mps2_an385.ld -nostartfiles -Wl,--gc-sections -Wl,-Map=build_O3_ic20/coremark_m3.map build_O3_ic20/startup.o build_O3_ic20/core_portme.o build_O3_ic20/ee_printf.o build_O3_ic20/core_main.o build_O3_ic20/core_list_join.o build_O3_ic20/core_matrix.o build_O3_ic20/core_state.o build_O3_ic20/core_util.o build_O3_ic20/cvt.o -lc -lgcc -o build_O3_ic20/coremark_m3.elf
+arm-none-eabi-objcopy -O binary build_O3_ic20/coremark_m3.elf build_O3_ic20/coremark_m3.bin
+arm-none-eabi-objdump -d -S build_O3_ic20/coremark_m3.elf > build_O3_ic20/coremark_m3.obj
+arm-none-eabi-size build_O3_ic20/coremark_m3.elf
+   text	   data	    bss	    dec	    hex	filename
+  12304	     12	     40	  12356	   3044	build_O3_ic20/coremark_m3.elf
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 140741
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 20
+Compiler version : GCC13.2.1 20231009
+Compiler flags   : -O3 -mcpu=cortex-m3 -mthumb 
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x4983
+Errors detected
+[M3-PORT] Total ticks (64b): 0x00000000000225c5 (140741 low32), SYSCLK_HZ=25000000
+=== BUILD M3 O3_unroll (-O3 -funroll-loops) ===
+mkdir -p build_O3_unroll_ic20
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c startup.c -o build_O3_unroll_ic20/startup.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c core_portme.c -o build_O3_unroll_ic20/core_portme.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c ee_printf.c -o build_O3_unroll_ic20/ee_printf.o
+ee_printf.c: In function 'eaddr':
+ee_printf.c:143:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  143 | eaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'iaddr':
+ee_printf.c:172:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  172 | iaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'ee_vsprintf':
+ee_printf.c:589:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  589 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:591:13: note: here
+  591 |             case 'a':
+      |             ^~~~
+ee_printf.c:612:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  612 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:614:13: note: here
+  614 |             case 'x':
+      |             ^~~~
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c ../common/coremark/core_main.c -o build_O3_unroll_ic20/core_main.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c ../common/coremark/core_list_join.c -o build_O3_unroll_ic20/core_list_join.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c ../common/coremark/core_matrix.c -o build_O3_unroll_ic20/core_matrix.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c ../common/coremark/core_state.c -o build_O3_unroll_ic20/core_state.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c ../common/coremark/core_util.c -o build_O3_unroll_ic20/core_util.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -O3 -funroll-loops -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-O3 -mcpu=cortex-m3 -mthumb -funroll-loops\"" -c ../common/coremark/cvt.c -o build_O3_unroll_ic20/cvt.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -T mps2_an385.ld -nostartfiles -Wl,--gc-sections -Wl,-Map=build_O3_unroll_ic20/coremark_m3.map build_O3_unroll_ic20/startup.o build_O3_unroll_ic20/core_portme.o build_O3_unroll_ic20/ee_printf.o build_O3_unroll_ic20/core_main.o build_O3_unroll_ic20/core_list_join.o build_O3_unroll_ic20/core_matrix.o build_O3_unroll_ic20/core_state.o build_O3_unroll_ic20/core_util.o build_O3_unroll_ic20/cvt.o -lc -lgcc -o build_O3_unroll_ic20/coremark_m3.elf
+arm-none-eabi-objcopy -O binary build_O3_unroll_ic20/coremark_m3.elf build_O3_unroll_ic20/coremark_m3.bin
+arm-none-eabi-objdump -d -S build_O3_unroll_ic20/coremark_m3.elf > build_O3_unroll_ic20/coremark_m3.obj
+arm-none-eabi-size build_O3_unroll_ic20/coremark_m3.elf
+   text	   data	    bss	    dec	    hex	filename
+  16928	     12	     40	  16980	   4254	build_O3_unroll_ic20/coremark_m3.elf
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 131906
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 20
+Compiler version : GCC13.2.1 20231009
+Compiler flags   : -O3 -mcpu=cortex-m3 -mthumb -funroll-loops
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x4983
+Errors detected
+[M3-PORT] Total ticks (64b): 0x0000000000020342 (131906 low32), SYSCLK_HZ=25000000
+=== BUILD M3 Os (-Os ) ===
+mkdir -p build_Os_ic20
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c startup.c -o build_Os_ic20/startup.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c core_portme.c -o build_Os_ic20/core_portme.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ee_printf.c -o build_Os_ic20/ee_printf.o
+ee_printf.c: In function 'eaddr':
+ee_printf.c:143:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  143 | eaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'iaddr':
+ee_printf.c:172:53: warning: unused parameter 'precision' [-Wunused-parameter]
+  172 | iaddr(char *str, unsigned char *addr, int size, int precision, int type)
+      |                                                 ~~~~^~~~~~~~~
+ee_printf.c: In function 'ee_vsprintf':
+ee_printf.c:589:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  589 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:591:13: note: here
+  591 |             case 'a':
+      |             ^~~~
+ee_printf.c:612:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  612 |                 flags |= UPPERCASE;
+      |                       ^
+ee_printf.c:614:13: note: here
+  614 |             case 'x':
+      |             ^~~~
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_main.c -o build_Os_ic20/core_main.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_list_join.c -o build_Os_ic20/core_list_join.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_matrix.c -o build_Os_ic20/core_matrix.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_state.c -o build_Os_ic20/core_state.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/core_util.c -o build_Os_ic20/core_util.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Wall -Wextra -ffunction-sections -fdata-sections -Os  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=20 -DSYSCLK_HZ=25000000 -DFLAGS_STR="\"-Os -mcpu=cortex-m3 -mthumb \"" -c ../common/coremark/cvt.c -o build_Os_ic20/cvt.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -T mps2_an385.ld -nostartfiles -Wl,--gc-sections -Wl,-Map=build_Os_ic20/coremark_m3.map build_Os_ic20/startup.o build_Os_ic20/core_portme.o build_Os_ic20/ee_printf.o build_Os_ic20/core_main.o build_Os_ic20/core_list_join.o build_Os_ic20/core_matrix.o build_Os_ic20/core_state.o build_Os_ic20/core_util.o build_Os_ic20/cvt.o -lc -lgcc -o build_Os_ic20/coremark_m3.elf
+arm-none-eabi-objcopy -O binary build_Os_ic20/coremark_m3.elf build_Os_ic20/coremark_m3.bin
+arm-none-eabi-objdump -d -S build_Os_ic20/coremark_m3.elf > build_Os_ic20/coremark_m3.obj
+arm-none-eabi-size build_Os_ic20/coremark_m3.elf
+   text	   data	    bss	    dec	    hex	filename
+   8404	     12	     40	   8456	   2108	build_Os_ic20/coremark_m3.elf
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 182924
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 20
+Compiler version : GCC13.2.1 20231009
+Compiler flags   : -Os -mcpu=cortex-m3 -mthumb 
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x4983
+Errors detected
+[M3-PORT] Total ticks (64b): 0x000000000002ca8c (182924 low32), SYSCLK_HZ=25000000

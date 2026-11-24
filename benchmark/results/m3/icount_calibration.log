@@ -1,0 +1,11 @@
+make: Entering directory '/work/benchmark/m3'
+mkdir -p build_calib
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -Wall -Wextra -ffunction-sections -fdata-sections -I. -I../common/coremark -DSYSCLK_HZ=25000000 -c startup.c -o build_calib/startup.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -Wall -Wextra -ffunction-sections -fdata-sections -I. -I../common/coremark -DSYSCLK_HZ=25000000 -c calib_icount.c -o build_calib/calib_icount.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -Wall -Wextra -ffunction-sections -fdata-sections -I. -I../common/coremark -DSYSCLK_HZ=25000000 -c ee_printf.c -o build_calib/ee_printf.o
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -T mps2_an385.ld -nostartfiles -Wl,--gc-sections build_calib/startup.o build_calib/calib_icount.o build_calib/ee_printf.o -lc -lgcc -o build_calib/calib_icount.elf
+qemu-system-arm -M mps2-an385 -nographic -icount shift=0 -semihosting-config enable=on,target=native -kernel build_calib/calib_icount.elf
+CAL_LOOP_ITERS=500000 CAL_LOOP_INSNS=1000000 CAL_DT=25000 SYSCLK_HZ=25000000
+qemu-system-arm -M mps2-an385 -nographic -icount shift=1 -semihosting-config enable=on,target=native -kernel build_calib/calib_icount.elf
+CAL_LOOP_ITERS=500000 CAL_LOOP_INSNS=1000000 CAL_DT=50001 SYSCLK_HZ=25000000
+make: Leaving directory '/work/benchmark/m3'

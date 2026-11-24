@@ -1,0 +1,24 @@
+# macOS & OS artifacts
+.DS_Store
+._*
+Thumbs.db
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local course submission documents containing personal metadata
+proposal/*.pdf
+proposal/*.docx
+proposal/build_proposal.py
+midterm/*.pdf
+midterm/*.docx
+midterm/build_midterm.py
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~

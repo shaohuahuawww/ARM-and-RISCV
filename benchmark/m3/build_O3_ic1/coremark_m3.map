@@ -1,0 +1,558 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+                              build_O3_ic1/startup.o (memset)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+                              build_O3_ic1/startup.o (memcpy)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+                              build_O3_ic1/cvt.o (modf)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o) (__fpclassifyd)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+                              build_O3_ic1/cvt.o (__aeabi_dmul)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o) (__aeabi_dsub)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+                              build_O3_ic1/cvt.o (__aeabi_ddiv)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+                              build_O3_ic1/cvt.o (__aeabi_dcmpeq)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+                              build_O3_ic1/cvt.o (__aeabi_d2iz)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                              build_O3_ic1/core_portme.o (__aeabi_uldivmod)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 build_O3_ic1/startup.o
+ .data          0x00000000        0x0 build_O3_ic1/startup.o
+ .bss           0x00000000        0x0 build_O3_ic1/startup.o
+ .text          0x00000000        0x0 build_O3_ic1/core_portme.o
+ .data          0x00000000        0x0 build_O3_ic1/core_portme.o
+ .bss           0x00000000        0x0 build_O3_ic1/core_portme.o
+ .text.barebones_clock
+                0x00000000       0x40 build_O3_ic1/core_portme.o
+ .text          0x00000000        0x0 build_O3_ic1/ee_printf.o
+ .data          0x00000000        0x0 build_O3_ic1/ee_printf.o
+ .bss           0x00000000        0x0 build_O3_ic1/ee_printf.o
+ .text.uart_send_char
+                0x00000000        0x4 build_O3_ic1/ee_printf.o
+ .text          0x00000000        0x0 build_O3_ic1/core_main.o
+ .data          0x00000000        0x0 build_O3_ic1/core_main.o
+ .bss           0x00000000        0x0 build_O3_ic1/core_main.o
+ .rodata.str1.4
+                0x00000000       0x16 build_O3_ic1/core_main.o
+ .data.mem_name
+                0x00000000        0xc build_O3_ic1/core_main.o
+ .text          0x00000000        0x0 build_O3_ic1/core_list_join.o
+ .data          0x00000000        0x0 build_O3_ic1/core_list_join.o
+ .bss           0x00000000        0x0 build_O3_ic1/core_list_join.o
+ .text.calc_func
+                0x00000000       0x90 build_O3_ic1/core_list_join.o
+ .text.cmp_idx  0x00000000       0x3c build_O3_ic1/core_list_join.o
+ .text.copy_info
+                0x00000000        0x8 build_O3_ic1/core_list_join.o
+ .text.core_list_insert_new
+                0x00000000       0x3c build_O3_ic1/core_list_join.o
+ .text.core_list_remove
+                0x00000000       0x18 build_O3_ic1/core_list_join.o
+ .text.core_list_undo_remove
+                0x00000000       0x14 build_O3_ic1/core_list_join.o
+ .text.core_list_find
+                0x00000000       0x34 build_O3_ic1/core_list_join.o
+ .text.core_list_reverse
+                0x00000000       0x14 build_O3_ic1/core_list_join.o
+ .text.core_list_mergesort
+                0x00000000       0xb4 build_O3_ic1/core_list_join.o
+ .text          0x00000000        0x0 build_O3_ic1/core_matrix.o
+ .data          0x00000000        0x0 build_O3_ic1/core_matrix.o
+ .bss           0x00000000        0x0 build_O3_ic1/core_matrix.o
+ .text.matrix_sum
+                0x00000000       0x58 build_O3_ic1/core_matrix.o
+ .text.matrix_mul_const
+                0x00000000       0x4c build_O3_ic1/core_matrix.o
+ .text.matrix_add_const
+                0x00000000       0x3c build_O3_ic1/core_matrix.o
+ .text.matrix_mul_vect
+                0x00000000       0x40 build_O3_ic1/core_matrix.o
+ .text.matrix_mul_matrix
+                0x00000000       0x6c build_O3_ic1/core_matrix.o
+ .text.matrix_mul_matrix_bitextract
+                0x00000000       0x74 build_O3_ic1/core_matrix.o
+ .text          0x00000000        0x0 build_O3_ic1/core_state.o
+ .data          0x00000000        0x0 build_O3_ic1/core_state.o
+ .bss           0x00000000        0x0 build_O3_ic1/core_state.o
+ .text          0x00000000        0x0 build_O3_ic1/core_util.o
+ .data          0x00000000        0x0 build_O3_ic1/core_util.o
+ .bss           0x00000000        0x0 build_O3_ic1/core_util.o
+ .text.crcu8    0x00000000       0x8c build_O3_ic1/core_util.o
+ .text          0x00000000        0x0 build_O3_ic1/cvt.o
+ .data          0x00000000        0x0 build_O3_ic1/cvt.o
+ .bss           0x00000000        0x0 build_O3_ic1/cvt.o
+ .text.cvt      0x00000000      0x2e8 build_O3_ic1/cvt.o
+ .text.ecvt     0x00000000       0x1c build_O3_ic1/cvt.o
+ .text.ecvtbuf  0x00000000       0x1c build_O3_ic1/cvt.o
+ .text.fcvt     0x00000000       0x1c build_O3_ic1/cvt.o
+ .text.fcvtbuf  0x00000000       0x1c build_O3_ic1/cvt.o
+ .bss.CVTBUF    0x00000000       0x50 build_O3_ic1/cvt.o
+ .comment       0x00000000       0x27 build_O3_ic1/cvt.o
+ .ARM.attributes
+                0x00000000       0x2d build_O3_ic1/cvt.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .ARM.extab     0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .eh_frame      0x00000000       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .text          0x00000000       0xa4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_info    0x00000000      0x293 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_abbrev  0x00000000      0x161 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_loclists
+                0x00000000      0x2e1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_rnglists
+                0x00000000       0x1a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_line    0x00000000      0x22d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_str     0x00000000      0x20c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .debug_frame   0x00000000       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .ARM.attributes
+                0x00000000       0x2d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_modf.o)
+ .text          0x00000000       0x58 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .debug_info    0x00000000      0x13f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .debug_abbrev  0x00000000       0xef /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .debug_loclists
+                0x00000000       0xaf /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .debug_line    0x00000000      0x16d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .debug_str     0x00000000      0x1df /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .debug_frame   0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .ARM.attributes
+                0x00000000       0x2d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libm_a-s_fpclassify.o)
+ .text          0x00000000      0x254 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .debug_line    0x00000000       0xf5 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .debug_line_str
+                0x00000000       0x98 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .debug_info    0x00000000       0x3f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .debug_abbrev  0x00000000       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .debug_str     0x00000000       0xba /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .debug_frame   0x00000000       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .ARM.attributes
+                0x00000000       0x1d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldf3.o)
+ .text          0x00000000      0x378 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x00000000      0x16f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_line_str
+                0x00000000       0x98 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x00000000       0xd3 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00000000       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x00000000      0x150 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000       0xac /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000000       0x1d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000      0x424 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x00000000      0x184 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_line_str
+                0x00000000       0x98 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00000000       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x00000000       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x00000000       0xd0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00000000       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000000       0x1d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .text          0x00000000      0x110 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x00000000       0xa6 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_line_str
+                0x00000000       0x98 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x00000000       0xdf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x00000000       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_str     0x00000000      0x159 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00000000       0xc4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000000       0x1d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .text          0x00000000       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_line    0x00000000       0x62 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_line_str
+                0x00000000       0x98 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_info    0x00000000       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_abbrev  0x00000000       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_str     0x00000000       0xbb /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00000000       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x00000000       0x1d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00400000         xr
+RAM              0x20000000         0x00400000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build_O3_ic1/startup.o
+LOAD build_O3_ic1/core_portme.o
+LOAD build_O3_ic1/ee_printf.o
+LOAD build_O3_ic1/core_main.o
+LOAD build_O3_ic1/core_list_join.o
+LOAD build_O3_ic1/core_matrix.o
+LOAD build_O3_ic1/core_state.o
+LOAD build_O3_ic1/core_util.o
+LOAD build_O3_ic1/cvt.o
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a
+END GROUP
+                0x20400000                        __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x00000000       0x40
+ *(.isr_vector)
+ .isr_vector    0x00000000       0x40 build_O3_ic1/startup.o
+                0x00000000                g_pfnVectors
+                0x00000040                        . = ALIGN (0x4)
+
+.text           0x00000040     0x2fc8
+ *(.text*)
+ .text.Default_Handler
+                0x00000040        0x4 build_O3_ic1/startup.o
+                0x00000040                Default_Handler
+ .text.Reset_Handler
+                0x00000044       0x68 build_O3_ic1/startup.o
+                0x00000044                Reset_Handler
+ .text.HardFault_Handler
+                0x000000ac       0x1c build_O3_ic1/startup.o
+                0x000000ac                HardFault_Handler
+ .text.SysTick_Handler
+                0x000000c8       0x1c build_O3_ic1/core_portme.o
+                0x000000c8                SysTick_Handler
+ .text.uart_putc
+                0x000000e4       0x24 build_O3_ic1/core_portme.o
+                0x000000e4                uart_putc
+ .text.start_time
+                0x00000108       0x48 build_O3_ic1/core_portme.o
+                0x00000108                start_time
+ .text.stop_time
+                0x00000150       0x48 build_O3_ic1/core_portme.o
+                0x00000150                stop_time
+ .text.get_time
+                0x00000198       0x1c build_O3_ic1/core_portme.o
+                0x00000198                get_time
+ *fill*         0x000001b4        0x4 
+ .text.time_in_secs
+                0x000001b8       0x18 build_O3_ic1/core_portme.o
+                0x000001b8                time_in_secs
+ .text.portable_init
+                0x000001d0       0x3c build_O3_ic1/core_portme.o
+                0x000001d0                portable_init
+ .text.portable_fini
+                0x0000020c       0x3c build_O3_ic1/core_portme.o
+                0x0000020c                portable_fini
+ .text.number   0x00000248      0x1b4 build_O3_ic1/ee_printf.o
+ .text.ee_printf
+                0x000003fc      0x8c4 build_O3_ic1/ee_printf.o
+                0x000003fc                ee_printf
+ .text.iterate  0x00000cc0       0x48 build_O3_ic1/core_main.o
+                0x00000cc0                iterate
+ .text.startup.main
+                0x00000d08      0x598 build_O3_ic1/core_main.o
+                0x00000d08                main
+ .text.cmp_complex
+                0x000012a0      0x120 build_O3_ic1/core_list_join.o
+                0x000012a0                cmp_complex
+ .text.core_bench_list
+                0x000013c0      0x308 build_O3_ic1/core_list_join.o
+                0x000013c0                core_bench_list
+ .text.core_list_init
+                0x000016c8      0x1d0 build_O3_ic1/core_list_join.o
+                0x000016c8                core_list_init
+ .text.matrix_test
+                0x00001898      0x37c build_O3_ic1/core_matrix.o
+                0x00001898                matrix_test
+ .text.core_bench_matrix
+                0x00001c14       0x20 build_O3_ic1/core_matrix.o
+                0x00001c14                core_bench_matrix
+ .text.core_init_matrix
+                0x00001c34       0xec build_O3_ic1/core_matrix.o
+                0x00001c34                core_init_matrix
+ .text.core_init_state
+                0x00001d20      0x140 build_O3_ic1/core_state.o
+                0x00001d20                core_init_state
+ .text.core_state_transition
+                0x00001e60      0x198 build_O3_ic1/core_state.o
+                0x00001e60                core_state_transition
+ .text.core_bench_state
+                0x00001ff8      0x124 build_O3_ic1/core_state.o
+                0x00001ff8                core_bench_state
+ .text.get_seed_32
+                0x0000211c       0x48 build_O3_ic1/core_util.o
+                0x0000211c                get_seed_32
+ .text.crcu16   0x00002164      0x118 build_O3_ic1/core_util.o
+                0x00002164                crcu16
+ .text.crcu32   0x0000227c      0x240 build_O3_ic1/core_util.o
+                0x0000227c                crcu32
+ .text.crc16    0x000024bc      0x11c build_O3_ic1/core_util.o
+                0x000024bc                crc16
+ .text.check_data_types
+                0x000025d8        0x4 build_O3_ic1/core_util.o
+                0x000025d8                check_data_types
+ .text          0x000025dc       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+                0x000025dc                memset
+ .text          0x0000267c       0xec /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+                0x0000267c                memcpy
+ .text          0x00002768       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                0x00002768                __aeabi_uldivmod
+ .text          0x00002798      0x2b4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x00002798                __udivmoddi4
+ .text          0x00002a4c        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00002a4c                __aeabi_ldiv0
+                0x00002a4c                __aeabi_idiv0
+ *(.rodata*)
+ .rodata.HardFault_Handler.str1.4
+                0x00002a50      0x575 build_O3_ic1/startup.o
+                                 0x1d (size before relaxing)
+ .rodata.portable_fini.str1.4
+                0x00002fc5       0x42 build_O3_ic1/core_portme.o
+ .rodata.number.str1.4
+                0x00002fc5       0x4d build_O3_ic1/ee_printf.o
+ .rodata.ee_printf.str1.4
+                0x00002fc5        0x7 build_O3_ic1/ee_printf.o
+ .rodata.main.str1.4
+                0x00002fc5      0x409 build_O3_ic1/core_main.o
+ .rodata.str1.4
+                0x00002fc5       0xad build_O3_ic1/core_state.o
+ *fill*         0x00002fc5        0x3 
+ .rodata.errpat
+                0x00002fc8       0x10 build_O3_ic1/core_state.o
+ .rodata.scipat
+                0x00002fd8       0x10 build_O3_ic1/core_state.o
+ .rodata.floatpat
+                0x00002fe8       0x10 build_O3_ic1/core_state.o
+ .rodata.intpat
+                0x00002ff8       0x10 build_O3_ic1/core_state.o
+                0x00003008                        . = ALIGN (0x4)
+                0x00003008                        _etext = .
+
+.glue_7         0x00003008        0x0
+ .glue_7        0x00003008        0x0 linker stubs
+
+.glue_7t        0x00003008        0x0
+ .glue_7t       0x00003008        0x0 linker stubs
+
+.vfp11_veneer   0x00003008        0x0
+ .vfp11_veneer  0x00003008        0x0 linker stubs
+
+.v4_bx          0x00003008        0x0
+ .v4_bx         0x00003008        0x0 linker stubs
+
+.iplt           0x00003008        0x0
+ .iplt          0x00003008        0x0 build_O3_ic1/startup.o
+
+.ARM.exidx      0x00003008        0x8
+ *(.ARM.exidx*)
+ .ARM.exidx     0x00003008        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .ARM.exidx     0x00003010        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+                                  0x8 (size before relaxing)
+                0x00003010                        _sidata = LOADADDR (.data)
+
+.rel.dyn        0x00003010        0x0
+ .rel.iplt      0x00003010        0x0 build_O3_ic1/startup.o
+
+.data           0x20000000        0xc load address 0x00003010
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sdata = .
+ *(.data*)
+ .data.default_num_contexts
+                0x20000000        0x4 build_O3_ic1/core_portme.o
+                0x20000000                default_num_contexts
+ .data.seed4_volatile
+                0x20000004        0x4 build_O3_ic1/core_portme.o
+                0x20000004                seed4_volatile
+ .data.seed3_volatile
+                0x20000008        0x4 build_O3_ic1/core_portme.o
+                0x20000008                seed3_volatile
+                0x2000000c                        . = ALIGN (0x4)
+                0x2000000c                        _edata = .
+
+.igot.plt       0x2000000c        0x0 load address 0x0000301c
+ .igot.plt      0x2000000c        0x0 build_O3_ic1/startup.o
+
+.bss            0x20000010       0x24 load address 0x0000301c
+                0x20000010                        . = ALIGN (0x4)
+                0x20000010                        _sbss = .
+                0x20000010                        __bss_start__ = _sbss
+ *(.bss*)
+ .bss.stop_time_val
+                0x20000010        0x8 build_O3_ic1/core_portme.o
+ .bss.start_time_val
+                0x20000018        0x8 build_O3_ic1/core_portme.o
+ .bss.g_systick_overflows
+                0x20000020        0x8 build_O3_ic1/core_portme.o
+ .bss.seed5_volatile
+                0x20000028        0x4 build_O3_ic1/core_portme.o
+                0x20000028                seed5_volatile
+ .bss.seed2_volatile
+                0x2000002c        0x4 build_O3_ic1/core_portme.o
+                0x2000002c                seed2_volatile
+ .bss.seed1_volatile
+                0x20000030        0x4 build_O3_ic1/core_portme.o
+                0x20000030                seed1_volatile
+ *(COMMON)
+                0x20000034                        . = ALIGN (0x4)
+                0x20000034                        _ebss = .
+                0x20000034                        __bss_end__ = _ebss
+
+.heap           0x20000034        0x4 load address 0x0000301c
+                0x20000038                        . = ALIGN (0x8)
+ *fill*         0x20000034        0x4 
+                0x20000038                        _end = .
+                0x20000038                        end = _end
+OUTPUT(build_O3_ic1/coremark_m3.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 build_O3_ic1/startup.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 build_O3_ic1/core_portme.o
+ .comment       0x00000026       0x27 build_O3_ic1/ee_printf.o
+ .comment       0x00000026       0x27 build_O3_ic1/core_main.o
+ .comment       0x00000026       0x27 build_O3_ic1/core_list_join.o
+ .comment       0x00000026       0x27 build_O3_ic1/core_matrix.o
+ .comment       0x00000026       0x27 build_O3_ic1/core_state.o
+ .comment       0x00000026       0x27 build_O3_ic1/core_util.o
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+
+.ARM.attributes
+                0x00000000       0x2b
+ .ARM.attributes
+                0x00000000       0x2d build_O3_ic1/startup.o
+ .ARM.attributes
+                0x0000002d       0x2d build_O3_ic1/core_portme.o
+ .ARM.attributes
+                0x0000005a       0x2d build_O3_ic1/ee_printf.o
+ .ARM.attributes
+                0x00000087       0x2d build_O3_ic1/core_main.o
+ .ARM.attributes
+                0x000000b4       0x2d build_O3_ic1/core_list_join.o
+ .ARM.attributes
+                0x000000e1       0x2d build_O3_ic1/core_matrix.o
+ .ARM.attributes
+                0x0000010e       0x2d build_O3_ic1/core_state.o
+ .ARM.attributes
+                0x0000013b       0x2d build_O3_ic1/core_util.o
+ .ARM.attributes
+                0x00000168       0x2d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000195       0x1b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .ARM.attributes
+                0x000001b0       0x1d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x000001cd       0x2d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000001fa       0x1d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_info     0x00000000      0x8bd
+ .debug_info    0x00000000      0x135 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .debug_info    0x00000135       0x33 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .debug_info    0x00000168       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000018c      0x6f5 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x00000881       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_abbrev   0x00000000      0x283
+ .debug_abbrev  0x00000000       0xb7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .debug_abbrev  0x000000b7       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .debug_abbrev  0x000000df       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x000000f3      0x16a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000025d       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_loclists
+                0x00000000      0xc41
+ .debug_loclists
+                0x00000000      0x1d7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .debug_loclists
+                0x000001d7      0xa6a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+
+.debug_aranges  0x00000000       0xa0
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .debug_aranges
+                0x00000020       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .debug_aranges
+                0x00000040       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x00000060       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_aranges
+                0x00000080       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_line     0x00000000      0x876
+ .debug_line    0x00000000      0x1b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .debug_line    0x000001b1       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .debug_line    0x0000026e       0x4e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x000002bc      0x570 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000082c       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_str      0x00000000      0x814
+ .debug_str     0x00000000      0x814 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+                                0x1a0 (size before relaxing)
+ .debug_str     0x00000814       0xa3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+ .debug_str     0x00000814       0x9f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x00000814      0x67d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x00000814       0xbf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_frame    0x00000000       0x8c
+ .debug_frame   0x00000000       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memset.o)
+ .debug_frame   0x0000002c       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000058       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+
+.debug_line_str
+                0x00000000      0x12f
+ .debug_line_str
+                0x00000000      0x12f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(libc_a-memcpy.o)
+                                 0x90 (size before relaxing)
+ .debug_line_str
+                0x0000012f       0x93 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line_str
+                0x0000012f       0x97 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_rnglists
+                0x00000000       0x9d
+ .debug_rnglists
+                0x00000000       0x9d /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)

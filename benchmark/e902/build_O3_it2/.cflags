@@ -1,0 +1,1 @@
+-march=rv32emc_zicsr_zifencei -mabi=ilp32e -isystem /usr/include/newlib -Wall -Wextra -ffunction-sections -fdata-sections -O3  -I. -I../common/coremark -DPERFORMANCE_RUN=1 -DITERATIONS=2 -DSYSCLK_HZ=100000000 -DFLAGS_STR="\"-O3 -march=rv32emc -mabi=ilp32e \""

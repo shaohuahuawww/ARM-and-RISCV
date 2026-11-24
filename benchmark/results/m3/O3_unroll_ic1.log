@@ -1,0 +1,16 @@
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 6595
+Total time (secs): 0
+ERROR! Must execute for at least 10 secs for a valid result!
+Iterations       : 1
+Compiler version : GCC13.2.1 20231009
+Compiler flags   : -O3 -mcpu=cortex-m3 -mthumb -funroll-loops
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xe714
+Errors detected
+[M3-PORT] Total ticks (64b): 0x00000000000019c3 (6595 low32), SYSCLK_HZ=25000000
